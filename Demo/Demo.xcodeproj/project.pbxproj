@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223A73DF1C900C7E000B79EB /* UIImage+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73DE1C900C7E000B79EB /* UIImage+SAMExtension.m */; };
+		223A73E41C9014BF000B79EB /* UIView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73E31C9014BF000B79EB /* UIView+SAMExtension.m */; };
+		223A73E81C903346000B79EB /* UIDatePicker+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73E71C903346000B79EB /* UIDatePicker+SAMExtension.m */; };
 		225086EC1C8E639D00A5245C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EB1C8E639D00A5245C /* main.m */; };
 		225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EE1C8E639D00A5245C /* AppDelegate.m */; };
 		225086F21C8E639D00A5245C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086F11C8E639D00A5245C /* ViewController.m */; };
@@ -15,6 +18,8 @@
 		225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225086F81C8E639D00A5245C /* LaunchScreen.storyboard */; };
 		225087051C8E639D00A5245C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087041C8E639D00A5245C /* DemoTests.m */; };
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
+		225087241C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087231C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m */; };
+		225087291C8E65EA00A5245C /* NSObject+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087281C8E65EA00A5245C /* NSObject+SAMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223A73DD1C900C7E000B79EB /* UIImage+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SAMExtension.h"; sourceTree = "<group>"; };
+		223A73DE1C900C7E000B79EB /* UIImage+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SAMExtension.m"; sourceTree = "<group>"; };
+		223A73E01C900F6D000B79EB /* Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		223A73E21C9014BF000B79EB /* UIView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMExtension.h"; sourceTree = "<group>"; };
+		223A73E31C9014BF000B79EB /* UIView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMExtension.m"; sourceTree = "<group>"; };
+		223A73E61C903346000B79EB /* UIDatePicker+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+SAMExtension.h"; sourceTree = "<group>"; };
+		223A73E71C903346000B79EB /* UIDatePicker+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+SAMExtension.m"; sourceTree = "<group>"; };
 		225086E71C8E639D00A5245C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225086EB1C8E639D00A5245C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		225086ED1C8E639D00A5245C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +63,10 @@
 		2250870B1C8E639D00A5245C /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250870F1C8E639D00A5245C /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		225087111C8E639D00A5245C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225087221C8E654900A5245C /* UIButton+RemoveHighlightedEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RemoveHighlightedEffect.h"; sourceTree = "<group>"; };
+		225087231C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RemoveHighlightedEffect.m"; sourceTree = "<group>"; };
+		225087271C8E65EA00A5245C /* NSObject+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SAMExtension.h"; sourceTree = "<group>"; };
+		225087281C8E65EA00A5245C /* NSObject+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SAMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223A73E11C9014AB000B79EB /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				223A73E21C9014BF000B79EB /* UIView+SAMExtension.h */,
+				223A73E31C9014BF000B79EB /* UIView+SAMExtension.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		223A73E51C90332B000B79EB /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				223A73E61C903346000B79EB /* UIDatePicker+SAMExtension.h */,
+				223A73E71C903346000B79EB /* UIDatePicker+SAMExtension.m */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
 		225086DE1C8E639D00A5245C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +135,7 @@
 		225086E91C8E639D00A5245C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2250871D1C8E643800A5245C /* SAMUIKitTools */,
 				225086ED1C8E639D00A5245C /* AppDelegate.h */,
 				225086EE1C8E639D00A5245C /* AppDelegate.m */,
 				225086F01C8E639D00A5245C /* ViewController.h */,
@@ -138,6 +173,46 @@
 				225087111C8E639D00A5245C /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		2250871D1C8E643800A5245C /* SAMUIKitTools */ = {
+			isa = PBXGroup;
+			children = (
+				223A73E51C90332B000B79EB /* UIDatePicker */,
+				223A73E11C9014AB000B79EB /* UIView */,
+				225087261C8E65BD00A5245C /* UIImage */,
+				225087251C8E65B500A5245C /* NSObject */,
+				225087211C8E651300A5245C /* UIButton */,
+				223A73E01C900F6D000B79EB /* Categories.h */,
+			);
+			path = SAMUIKitTools;
+			sourceTree = "<group>";
+		};
+		225087211C8E651300A5245C /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				225087221C8E654900A5245C /* UIButton+RemoveHighlightedEffect.h */,
+				225087231C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		225087251C8E65B500A5245C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				225087271C8E65EA00A5245C /* NSObject+SAMExtension.h */,
+				225087281C8E65EA00A5245C /* NSObject+SAMExtension.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		225087261C8E65BD00A5245C /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				223A73DD1C900C7E000B79EB /* UIImage+SAMExtension.h */,
+				223A73DE1C900C7E000B79EB /* UIImage+SAMExtension.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
+				223A73E81C903346000B79EB /* UIDatePicker+SAMExtension.m in Sources */,
 				225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */,
+				225087291C8E65EA00A5245C /* NSObject+SAMExtension.m in Sources */,
+				225087241C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m in Sources */,
 				225086EC1C8E639D00A5245C /* main.m in Sources */,
+				223A73E41C9014BF000B79EB /* UIView+SAMExtension.m in Sources */,
+				223A73DF1C900C7E000B79EB /* UIImage+SAMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wydatas.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wydatas.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +580,7 @@
 				225087161C8E639D00A5245C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		225087171C8E639D00A5245C /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +589,7 @@
 				225087191C8E639D00A5245C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2250871A1C8E639D00A5245C /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +598,7 @@
 				2250871C1C8E639D00A5245C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
