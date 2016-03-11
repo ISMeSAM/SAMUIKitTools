@@ -20,6 +20,10 @@
 #import "UINavigationController+SAMExtension.h"
 #import "UIViewController+SAMExtension.h"
 #import "UIView+SAMExtension.h"
+#import "NSNumber+SAMExtension.h"
+#import "UITableViewCell+SAMExtension.h"
+
+
 
 
 
