@@ -21,7 +21,11 @@
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
 		225087241C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087231C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m */; };
 		225087291C8E65EA00A5245C /* NSObject+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087281C8E65EA00A5245C /* NSObject+SAMExtension.m */; };
+		22BDD1F01C929B3100647B42 /* UIBarButtonItem+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDD1EF1C929B3100647B42 /* UIBarButtonItem+SAMExtension.m */; };
 		22FDABD81C9266F50083310C /* UIColor+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDABD71C9266F50083310C /* UIColor+SAMExtension.m */; };
+		22FDABDC1C926D6B0083310C /* UILabel+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDABDB1C926D6B0083310C /* UILabel+SAMExtension.m */; };
+		22FDABE01C926FC70083310C /* UIViewController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDABDF1C926FC70083310C /* UIViewController+SAMExtension.m */; };
+		22FDABE41C927AE00083310C /* UINavigationController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDABE31C927AE00083310C /* UINavigationController+SAMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +75,16 @@
 		225087231C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RemoveHighlightedEffect.m"; sourceTree = "<group>"; };
 		225087271C8E65EA00A5245C /* NSObject+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SAMExtension.h"; sourceTree = "<group>"; };
 		225087281C8E65EA00A5245C /* NSObject+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SAMExtension.m"; sourceTree = "<group>"; };
+		22BDD1EE1C929B3100647B42 /* UIBarButtonItem+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SAMExtension.h"; sourceTree = "<group>"; };
+		22BDD1EF1C929B3100647B42 /* UIBarButtonItem+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SAMExtension.m"; sourceTree = "<group>"; };
 		22FDABD61C9266F50083310C /* UIColor+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SAMExtension.h"; sourceTree = "<group>"; };
 		22FDABD71C9266F50083310C /* UIColor+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SAMExtension.m"; sourceTree = "<group>"; };
+		22FDABDA1C926D6B0083310C /* UILabel+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SAMExtension.h"; sourceTree = "<group>"; };
+		22FDABDB1C926D6B0083310C /* UILabel+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SAMExtension.m"; sourceTree = "<group>"; };
+		22FDABDE1C926FC70083310C /* UIViewController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SAMExtension.h"; sourceTree = "<group>"; };
+		22FDABDF1C926FC70083310C /* UIViewController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SAMExtension.m"; sourceTree = "<group>"; };
+		22FDABE21C927AE00083310C /* UINavigationController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SAMExtension.h"; sourceTree = "<group>"; };
+		22FDABE31C927AE00083310C /* UINavigationController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SAMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +205,10 @@
 		2250871D1C8E643800A5245C /* SAMUIKitTools */ = {
 			isa = PBXGroup;
 			children = (
+				22BDD1ED1C929ABC00647B42 /* UIBarButtonItem */,
+				22FDABE11C927ACB0083310C /* UINavigationController */,
+				22FDABDD1C926FB50083310C /* UIViewController */,
+				22FDABD91C926BE60083310C /* UILabel */,
 				22FDABD51C9266CF0083310C /* UIColor */,
 				223A73E91C903685000B79EB /* NSString */,
 				223A73E51C90332B000B79EB /* UIDatePicker */,
@@ -232,6 +248,15 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		22BDD1ED1C929ABC00647B42 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				22BDD1EE1C929B3100647B42 /* UIBarButtonItem+SAMExtension.h */,
+				22BDD1EF1C929B3100647B42 /* UIBarButtonItem+SAMExtension.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
 		22FDABD51C9266CF0083310C /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +264,33 @@
 				22FDABD71C9266F50083310C /* UIColor+SAMExtension.m */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		22FDABD91C926BE60083310C /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				22FDABDA1C926D6B0083310C /* UILabel+SAMExtension.h */,
+				22FDABDB1C926D6B0083310C /* UILabel+SAMExtension.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		22FDABDD1C926FB50083310C /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22FDABDE1C926FC70083310C /* UIViewController+SAMExtension.h */,
+				22FDABDF1C926FC70083310C /* UIViewController+SAMExtension.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		22FDABE11C927ACB0083310C /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				22FDABE21C927AE00083310C /* UINavigationController+SAMExtension.h */,
+				22FDABE31C927AE00083310C /* UINavigationController+SAMExtension.m */,
+			);
+			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,16 +423,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FDABE01C926FC70083310C /* UIViewController+SAMExtension.m in Sources */,
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
 				223A73E81C903346000B79EB /* UIDatePicker+SAMExtension.m in Sources */,
+				22FDABE41C927AE00083310C /* UINavigationController+SAMExtension.m in Sources */,
 				225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */,
 				225087291C8E65EA00A5245C /* NSObject+SAMExtension.m in Sources */,
 				225087241C8E654900A5245C /* UIButton+RemoveHighlightedEffect.m in Sources */,
 				225086EC1C8E639D00A5245C /* main.m in Sources */,
+				22BDD1F01C929B3100647B42 /* UIBarButtonItem+SAMExtension.m in Sources */,
 				223A73E41C9014BF000B79EB /* UIView+SAMExtension.m in Sources */,
 				223A73DF1C900C7E000B79EB /* UIImage+SAMExtension.m in Sources */,
 				223A73EC1C903696000B79EB /* NSString+SAMExtension.m in Sources */,
 				22FDABD81C9266F50083310C /* UIColor+SAMExtension.m in Sources */,
+				22FDABDC1C926D6B0083310C /* UILabel+SAMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

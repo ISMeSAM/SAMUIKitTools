@@ -14,6 +14,14 @@
 #import "NSObject+SAMExtension.h"
 #import "UIDatePicker+SAMExtension.h"
 #import "NSString+SAMExtension.h"
+#import "UIColor+SAMExtension.h"
+#import "UILabel+SAMExtension.h"
+#import "UIBarButtonItem+SAMExtension.h"
+#import "UINavigationController+SAMExtension.h"
+#import "UIViewController+SAMExtension.h"
+#import "UIView+SAMExtension.h"
+
+
 
 
 #endif /* Categories_h */
