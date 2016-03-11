@@ -24,10 +24,11 @@
 {
     [super viewDidLoad];
     
-    self.senderButton.removeHighlightedEffect = YES;
-    
     
 }
+
+
+
 
 
 

@@ -8,24 +8,25 @@
 
 #import "UIBarButtonItem+SAMExtension.h"
 #import "UIView+SAMExtension.h"
-#import <objc/runtime.h>
 
-static const void *kCustomBarItemClick = &kCustomBarItemClick;
 
 @implementation UIBarButtonItem (SAMExtension)
 
-#pragma mark -
 
-- (void)setCustomBarItemClick:(void (^)())customBarItemClick
++ (instancetype)itemWithTitle:(NSString *)title
+                       target:(id)target
+                       action:(SEL)action
 {
-    objc_setAssociatedObject(self, kCustomBarItemClick, customBarItemClick, OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    
+    [button setTitle:title forState:UIControlStateNormal];
 
-- (void (^)())customBarItemClick
-{
-    return objc_getAssociatedObject(self, kCustomBarItemClick);
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    [button sizeToFit];
+    
+    return [[self alloc] initWithCustomView:button];
 }
-
 
 + (instancetype)itemWithTitle:(NSString *)title
                   normalColor:(UIColor *)normalColor
@@ -43,9 +44,8 @@ static const void *kCustomBarItemClick = &kCustomBarItemClick;
     
     [button sizeToFit];
     
-    return [[UIBarButtonItem alloc] initWithCustomView:button];
+    return [[self alloc] initWithCustomView:button];
 }
-
 
 
 + (instancetype)itemWithImageName:(NSString *)imageName
@@ -66,16 +66,12 @@ static const void *kCustomBarItemClick = &kCustomBarItemClick;
         }
     }
     
-    
-    
     button.size = button.currentImage.size;
     
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
-
-
 
 
 

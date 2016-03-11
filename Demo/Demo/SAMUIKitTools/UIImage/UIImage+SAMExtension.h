@@ -212,8 +212,10 @@ typedef NS_ENUM(NSUInteger, WatermarkPositionType) {
 + (UIImage *)originImage:(UIImage *)originImage scaleToSize:(CGSize)scaleToSize ;
 
 
+- (UIImage *)resizableImage;
+- (UIImage *)resizableImageWithCapInsetsCustom:(UIEdgeInsets)capInsets;
 
-
++ (instancetype)resizableWithImageNamed:(NSString *)imageName withsMode:(UIImageResizingMode)model;
 
 @end
 

@@ -8,10 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface UIBarButtonItem (SAMExtension)
 
 
-@property (nonatomic , copy, readwrite) void(^customBarItemClick)();
+
+/**
+ *  快速初始化一个BarButtonItem  title
+ *
+ *  @param title        title
+ *  @param target       target
+ *  @param action       action
+ *
+ *  @return 返回一个customView的UIBarButtonItem对象
+ */
++ (instancetype)itemWithTitle:(NSString *)title
+                       target:(id)target
+                       action:(SEL)action;
 
 
 

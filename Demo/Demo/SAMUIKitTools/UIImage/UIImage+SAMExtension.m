@@ -415,6 +415,39 @@
 }
 
 
+- (UIImage *)resizableImage
+{
+    CGSize size = self.size;
+    
+    CGFloat capLeft = size.width * 0.5;
+    CGFloat capRight = capLeft;
+    CGFloat capTop = size.height * 0.5;
+    CGFloat capBottom = capTop ;
+    
+    UIEdgeInsets inset = UIEdgeInsetsMake(capTop, capLeft, capBottom, capRight);
+    
+    return [self resizableImageWithCapInsetsCustom:inset];
+}
+
+- (UIImage *)resizableImageWithCapInsetsCustom:(UIEdgeInsets)capInsets
+{
+    return [self resizableImageWithCapInsets:capInsets resizingMode:UIImageResizingModeStretch];
+}
+
++ (instancetype)resizableWithImageNamed:(NSString *)imageName withsMode:(UIImageResizingMode)model
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    CGSize size = image.size;
+    
+    CGFloat capLeft = size.width * 0.5;
+    CGFloat capRight = capLeft;
+    CGFloat capTop = size.height * 0.5;
+    CGFloat capBottom = capTop ;
+    
+    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(capTop, capLeft, capBottom, capRight) resizingMode:model];
+}
+
 
 @end
 
