@@ -97,7 +97,7 @@
     CGFloat waterX ;
     CGFloat waterY ;
     
-    
+
     switch (type) {
             
             // 右下角

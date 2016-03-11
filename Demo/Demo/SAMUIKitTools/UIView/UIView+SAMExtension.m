@@ -221,17 +221,17 @@ IB_DESIGNABLE
     [self.layer removeAnimationForKey:@"RespirationLamp"];
 }
 
-- (void)radianWithTransform:(NSInteger)_x withAnimation:(BOOL)_animation
+- (void)radianWithTransform:(NSInteger)Rotate withAnimation:(BOOL)animated
 {
-    if (_animation) {
+    if (animated) {
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.5];
         [UIView setAnimationDelegate:self];
     }
     
-    self.transform = CGAffineTransformMakeRotation(M_PI*_x / 180.0);
+    self.transform = CGAffineTransformMakeRotation(M_PI * Rotate / 180.0);
     
-    if (_animation) {
+    if (animated) {
         [UIView commitAnimations];
     }
     

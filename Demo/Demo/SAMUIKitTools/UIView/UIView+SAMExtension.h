@@ -50,7 +50,7 @@
 - (void)endRespirationLamp;
 
 
--(void)radianWithTransform:(NSInteger)_x withAnimation:(BOOL)_animation;
+- (void)radianWithTransform:(NSInteger)Rotate withAnimation:(BOOL)animated;
 
 
 @end

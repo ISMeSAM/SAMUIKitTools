@@ -13,7 +13,7 @@
 #import "UIButton+RemoveHighlightedEffect.h"
 #import "NSObject+SAMExtension.h"
 #import "UIDatePicker+SAMExtension.h"
-
+#import "NSString+SAMExtension.h"
 
 
 #endif /* Categories_h */
