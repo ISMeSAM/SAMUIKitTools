@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221FAD471C93F23F007572C0 /* UIAlertController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 221FAD461C93F23F007572C0 /* UIAlertController+SAMExtension.m */; };
 		223A73DF1C900C7E000B79EB /* UIImage+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73DE1C900C7E000B79EB /* UIImage+SAMExtension.m */; };
 		223A73E41C9014BF000B79EB /* UIView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73E31C9014BF000B79EB /* UIView+SAMExtension.m */; };
 		223A73E81C903346000B79EB /* UIDatePicker+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 223A73E71C903346000B79EB /* UIDatePicker+SAMExtension.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221FAD451C93F23F007572C0 /* UIAlertController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SAMExtension.h"; sourceTree = "<group>"; };
+		221FAD461C93F23F007572C0 /* UIAlertController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SAMExtension.m"; sourceTree = "<group>"; };
 		223A73DD1C900C7E000B79EB /* UIImage+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SAMExtension.h"; sourceTree = "<group>"; };
 		223A73DE1C900C7E000B79EB /* UIImage+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SAMExtension.m"; sourceTree = "<group>"; };
 		223A73E01C900F6D000B79EB /* Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
@@ -139,6 +142,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221FAD441C93F221007572C0 /* UIAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				221FAD451C93F23F007572C0 /* UIAlertController+SAMExtension.h */,
+				221FAD461C93F23F007572C0 /* UIAlertController+SAMExtension.m */,
+			);
+			path = UIAlertViewController;
+			sourceTree = "<group>";
+		};
 		223A73E11C9014AB000B79EB /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +244,7 @@
 		2250871D1C8E643800A5245C /* SAMUIKitTools */ = {
 			isa = PBXGroup;
 			children = (
+				221FAD441C93F221007572C0 /* UIAlertViewController */,
 				22F80D311C93CDA1008738E7 /* UITextView */,
 				22F80D2D1C93CCA4008738E7 /* NSArray */,
 				22F80D291C93C85A008738E7 /* UITabBarItem */,
@@ -544,6 +557,7 @@
 				22FDABE01C926FC70083310C /* UIViewController+SAMExtension.m in Sources */,
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
 				223A73E81C903346000B79EB /* UIDatePicker+SAMExtension.m in Sources */,
+				221FAD471C93F23F007572C0 /* UIAlertController+SAMExtension.m in Sources */,
 				22F80D301C93CCBB008738E7 /* NSArray+SAMExtension.m in Sources */,
 				22FDABE41C927AE00083310C /* UINavigationController+SAMExtension.m in Sources */,
 				22BDD2001C92CB3300647B42 /* NSDate+SAMExtension.m in Sources */,

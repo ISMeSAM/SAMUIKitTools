@@ -28,6 +28,9 @@
 #import "UIApplication+SAMExtension.h"
 #import "NSArray+SAMExtension.h"
 #import "UITextView+SAMExtension.h"
+#import "UIAlertController+SAMExtension.h"
+
+
 
 
 #endif /* Categories_h */
