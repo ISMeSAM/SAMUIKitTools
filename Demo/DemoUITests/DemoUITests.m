@@ -32,9 +32,76 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testExample
+{
+    
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *element = [[[[[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+    [element tap];
+    [[[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:0] tap];
+    
+    XCUIElement *textField = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:1];
+    [textField tap];
+    [element tap];
+    [[[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:2] tap];
+    
+    XCUIElement *button = app.buttons[@"Button"];
+    [button tap];
+//    [app.tabBars.buttons[@"Item"] tap];
+    [textField tap];
+    [textField typeText:@"jhjqsdfasd"];
+    [element tap];
+    [button tap];
+        
+    
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
+
+- (void)testOne
+{
+    
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *element = [[[[[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+    XCUIElement *textField = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:0];
+    [textField tap];
+    [textField typeText:@"hello sam"];
+    
+    
+    XCUIElement *textField2 = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:1];
+    [textField2 tap];
+
+//    [textField2 typeText:@"hello world"];
+//    [element tap];
+    [app.buttons[@"Button"] tap];
+    
+    XCUIElement *textField3 = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:2];
+    [textField3 tap];
+    [textField3 tap];
+//    [textField3 typeText:@"hi sam"];
+    
+    
+    XCUIElementQuery *tabBarsQuery = app.tabBars;
+    XCUIElement *itemButton = [[[tabBarsQuery childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Item"] elementBoundByIndex:1];
+    [itemButton tap];
+    
+    XCUIElement *itemButton2 = [[[tabBarsQuery childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Item"] elementBoundByIndex:2];
+    [itemButton2 tap];
+    [itemButton tap];
+    [[[[tabBarsQuery childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Item"] elementBoundByIndex:0] tap];
+    [itemButton tap];
+    
+    XCUIElement *emptyListTable = app.tables[@"Empty list"];
+    [emptyListTable tap];
+    [emptyListTable tap];
+    [emptyListTable tap];
+    [emptyListTable tap];
+    [itemButton2 tap];
+    [emptyListTable tap];
+    [emptyListTable tap];
+    
+}
 @end
