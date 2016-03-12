@@ -24,8 +24,10 @@
 #import "UITableViewCell+SAMExtension.h"
 #import "CALayer+SAMExtension.h"
 #import "NSDate+SAMExtension.h"
-
-
+#import "UITabBarItem+SAMExtension.h"
+#import "UIApplication+SAMExtension.h"
+#import "NSArray+SAMExtension.h"
+#import "UITextView+SAMExtension.h"
 
 
 #endif /* Categories_h */
