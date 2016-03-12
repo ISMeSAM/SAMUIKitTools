@@ -1,10 +1,6 @@
 //
 //  SAMPopLists.h
-//  HumanSource
-//
-//  Created by samiMac on 15/12/8.
-//  Copyright © 2015年 wydatas. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import "Categories.h"

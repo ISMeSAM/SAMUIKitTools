@@ -1,10 +1,5 @@
 //
 //  SAMDatePicker.m
-//  HumanSource
-//
-//  Created by samiMac on 16/3/10.
-//  Copyright © 2016年 wydatas. All rights reserved.
-//
 
 #import "SAMDatePicker.h"
 

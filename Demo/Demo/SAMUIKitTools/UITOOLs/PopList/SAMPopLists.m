@@ -1,10 +1,6 @@
 //
 //  SAMPopLists.m
-//  HumanSource
-//
-//  Created by samiMac on 15/12/8.
-//  Copyright © 2015年 wydatas. All rights reserved.
-//
+
 
 #import "SAMPopLists.h"
 #define kRowH 44.f
