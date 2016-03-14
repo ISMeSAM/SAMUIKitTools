@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMPopLists">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="weC-Mu-6lf">
+                    <rect key="frame" x="180" y="236" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="i5N-UX-npZ"/>
+                        <constraint firstAttribute="width" constant="240" id="rqw-M7-l8X"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="KW9-Rd-L9t"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="YcB-Op-EBe"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="weC-Mu-6lf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="M11-4h-3w3"/>
+                <constraint firstItem="weC-Mu-6lf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Qbl-rp-qvN"/>
+            </constraints>
+            <connections>
+                <outlet property="hightConstrains" destination="i5N-UX-npZ" id="rak-WG-xId"/>
+                <outlet property="tableView" destination="weC-Mu-6lf" id="7rv-aS-beP"/>
+                <outlet property="widthConstraints" destination="rqw-M7-l8X" id="dPZ-fC-6Lt"/>
+            </connections>
+        </view>
+    </objects>
+</document>
