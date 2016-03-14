@@ -15,32 +15,32 @@
 		225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225086F81C8E639D00A5245C /* LaunchScreen.storyboard */; };
 		225087051C8E639D00A5245C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087041C8E639D00A5245C /* DemoTests.m */; };
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
-		22FFC97A1C9656F3009EF3F4 /* CALayer+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9311C9656F3009EF3F4 /* CALayer+SAMExtension.m */; };
-		22FFC97B1C9656F3009EF3F4 /* NSArray+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9351C9656F3009EF3F4 /* NSArray+SAMExtension.m */; };
-		22FFC97C1C9656F3009EF3F4 /* NSData+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9381C9656F3009EF3F4 /* NSData+SAMExtension.m */; };
-		22FFC97D1C9656F3009EF3F4 /* NSDate+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC93B1C9656F3009EF3F4 /* NSDate+SAMExtension.m */; };
-		22FFC97E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC93E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m */; };
-		22FFC97F1C9656F3009EF3F4 /* NSObject+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9411C9656F3009EF3F4 /* NSObject+SAMExtension.m */; };
-		22FFC9801C9656F3009EF3F4 /* NSString+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9441C9656F3009EF3F4 /* NSString+SAMExtension.m */; };
-		22FFC9811C9656F3009EF3F4 /* UIAlertController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9471C9656F3009EF3F4 /* UIAlertController+SAMExtension.m */; };
-		22FFC9821C9656F3009EF3F4 /* UIApplication+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC94A1C9656F3009EF3F4 /* UIApplication+SAMExtension.m */; };
-		22FFC9831C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC94D1C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.m */; };
-		22FFC9841C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9501C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m */; };
-		22FFC9851C9656F3009EF3F4 /* UIColor+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9531C9656F3009EF3F4 /* UIColor+SAMExtension.m */; };
-		22FFC9861C9656F3009EF3F4 /* UIDatePicker+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9561C9656F3009EF3F4 /* UIDatePicker+SAMExtension.m */; };
-		22FFC9871C9656F3009EF3F4 /* UIImage+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9591C9656F3009EF3F4 /* UIImage+SAMExtension.m */; };
-		22FFC9881C9656F3009EF3F4 /* UILabel+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC95C1C9656F3009EF3F4 /* UILabel+SAMExtension.m */; };
-		22FFC9891C9656F3009EF3F4 /* UINavigationController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC95F1C9656F3009EF3F4 /* UINavigationController+SAMExtension.m */; };
-		22FFC98A1C9656F3009EF3F4 /* UITabBarItem+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9621C9656F3009EF3F4 /* UITabBarItem+SAMExtension.m */; };
-		22FFC98B1C9656F3009EF3F4 /* UITableViewCell+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9651C9656F3009EF3F4 /* UITableViewCell+SAMExtension.m */; };
-		22FFC98C1C9656F3009EF3F4 /* UITextView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9681C9656F3009EF3F4 /* UITextView+SAMExtension.m */; };
-		22FFC98D1C9656F3009EF3F4 /* UIView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC96B1C9656F3009EF3F4 /* UIView+SAMExtension.m */; };
-		22FFC98E1C9656F3009EF3F4 /* UIViewController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC96E1C9656F3009EF3F4 /* UIViewController+SAMExtension.m */; };
-		22FFC98F1C9656F3009EF3F4 /* SAMPopLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9741C9656F3009EF3F4 /* SAMPopLists.m */; };
-		22FFC9901C9656F3009EF3F4 /* SAMPopLists.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFC9751C9656F3009EF3F4 /* SAMPopLists.xib */; };
-		22FFC9911C9656F3009EF3F4 /* SAMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9781C9656F3009EF3F4 /* SAMDatePicker.m */; };
-		22FFC9921C9656F3009EF3F4 /* SAMDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */; };
-		22FFC9971C966251009EF3F4 /* CheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9961C966251009EF3F4 /* CheckBox.m */; };
+		22FFCA191C968955009EF3F4 /* CALayer+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9CC1C968955009EF3F4 /* CALayer+SAMExtension.m */; };
+		22FFCA1A1C968955009EF3F4 /* NSArray+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9D01C968955009EF3F4 /* NSArray+SAMExtension.m */; };
+		22FFCA1B1C968955009EF3F4 /* NSData+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9D31C968955009EF3F4 /* NSData+SAMExtension.m */; };
+		22FFCA1C1C968955009EF3F4 /* NSDate+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9D61C968955009EF3F4 /* NSDate+SAMExtension.m */; };
+		22FFCA1D1C968955009EF3F4 /* NSNumber+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9D91C968955009EF3F4 /* NSNumber+SAMExtension.m */; };
+		22FFCA1E1C968955009EF3F4 /* NSObject+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9DC1C968955009EF3F4 /* NSObject+SAMExtension.m */; };
+		22FFCA1F1C968955009EF3F4 /* NSString+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9DF1C968955009EF3F4 /* NSString+SAMExtension.m */; };
+		22FFCA201C968955009EF3F4 /* UIAlertController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9E21C968955009EF3F4 /* UIAlertController+SAMExtension.m */; };
+		22FFCA211C968955009EF3F4 /* UIApplication+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9E51C968955009EF3F4 /* UIApplication+SAMExtension.m */; };
+		22FFCA221C968955009EF3F4 /* UIBarButtonItem+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9E81C968955009EF3F4 /* UIBarButtonItem+SAMExtension.m */; };
+		22FFCA231C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9EB1C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.m */; };
+		22FFCA241C968955009EF3F4 /* UIColor+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9EE1C968955009EF3F4 /* UIColor+SAMExtension.m */; };
+		22FFCA251C968955009EF3F4 /* UIDatePicker+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9F11C968955009EF3F4 /* UIDatePicker+SAMExtension.m */; };
+		22FFCA261C968955009EF3F4 /* UIImage+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9F41C968955009EF3F4 /* UIImage+SAMExtension.m */; };
+		22FFCA271C968955009EF3F4 /* UILabel+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9F71C968955009EF3F4 /* UILabel+SAMExtension.m */; };
+		22FFCA281C968955009EF3F4 /* UINavigationController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9FA1C968955009EF3F4 /* UINavigationController+SAMExtension.m */; };
+		22FFCA291C968955009EF3F4 /* UITabBarItem+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9FD1C968955009EF3F4 /* UITabBarItem+SAMExtension.m */; };
+		22FFCA2A1C968955009EF3F4 /* UITableViewCell+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA001C968955009EF3F4 /* UITableViewCell+SAMExtension.m */; };
+		22FFCA2B1C968955009EF3F4 /* UITextView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA031C968955009EF3F4 /* UITextView+SAMExtension.m */; };
+		22FFCA2C1C968955009EF3F4 /* UIView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA061C968955009EF3F4 /* UIView+SAMExtension.m */; };
+		22FFCA2D1C968955009EF3F4 /* UIViewController+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA091C968955009EF3F4 /* UIViewController+SAMExtension.m */; };
+		22FFCA2E1C968955009EF3F4 /* CheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA0F1C968955009EF3F4 /* CheckBox.m */; };
+		22FFCA2F1C968955009EF3F4 /* SAMPopLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA121C968955009EF3F4 /* SAMPopLists.m */; };
+		22FFCA301C968955009EF3F4 /* SAMPopLists.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFCA131C968955009EF3F4 /* SAMPopLists.xib */; };
+		22FFCA311C968955009EF3F4 /* SAMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCA161C968955009EF3F4 /* SAMDatePicker.m */; };
+		22FFCA321C968955009EF3F4 /* SAMDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFCA171C968955009EF3F4 /* SAMDatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,60 +77,60 @@
 		2250870B1C8E639D00A5245C /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250870F1C8E639D00A5245C /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		225087111C8E639D00A5245C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22FFC9301C9656F3009EF3F4 /* CALayer+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9311C9656F3009EF3F4 /* CALayer+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9321C9656F3009EF3F4 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
-		22FFC9341C9656F3009EF3F4 /* NSArray+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9351C9656F3009EF3F4 /* NSArray+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9371C9656F3009EF3F4 /* NSData+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9381C9656F3009EF3F4 /* NSData+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC93A1C9656F3009EF3F4 /* NSDate+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC93B1C9656F3009EF3F4 /* NSDate+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC93D1C9656F3009EF3F4 /* NSNumber+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC93E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9401C9656F3009EF3F4 /* NSObject+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9411C9656F3009EF3F4 /* NSObject+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9431C9656F3009EF3F4 /* NSString+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9441C9656F3009EF3F4 /* NSString+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9461C9656F3009EF3F4 /* UIAlertController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9471C9656F3009EF3F4 /* UIAlertController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9491C9656F3009EF3F4 /* UIApplication+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC94A1C9656F3009EF3F4 /* UIApplication+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC94C1C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC94D1C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC94F1C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RemoveHighlightedEffect.h"; sourceTree = "<group>"; };
-		22FFC9501C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RemoveHighlightedEffect.m"; sourceTree = "<group>"; };
-		22FFC9521C9656F3009EF3F4 /* UIColor+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9531C9656F3009EF3F4 /* UIColor+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9551C9656F3009EF3F4 /* UIDatePicker+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9561C9656F3009EF3F4 /* UIDatePicker+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9581C9656F3009EF3F4 /* UIImage+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9591C9656F3009EF3F4 /* UIImage+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC95B1C9656F3009EF3F4 /* UILabel+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC95C1C9656F3009EF3F4 /* UILabel+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC95E1C9656F3009EF3F4 /* UINavigationController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC95F1C9656F3009EF3F4 /* UINavigationController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9611C9656F3009EF3F4 /* UITabBarItem+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9621C9656F3009EF3F4 /* UITabBarItem+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9641C9656F3009EF3F4 /* UITableViewCell+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9651C9656F3009EF3F4 /* UITableViewCell+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC9671C9656F3009EF3F4 /* UITextView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC9681C9656F3009EF3F4 /* UITextView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC96A1C9656F3009EF3F4 /* UIView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC96B1C9656F3009EF3F4 /* UIView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC96D1C9656F3009EF3F4 /* UIViewController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SAMExtension.h"; sourceTree = "<group>"; };
-		22FFC96E1C9656F3009EF3F4 /* UIViewController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SAMExtension.m"; sourceTree = "<group>"; };
-		22FFC96F1C9656F3009EF3F4 /* SAMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeys.h; sourceTree = "<group>"; };
-		22FFC9701C9656F3009EF3F4 /* SAMUIKitTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMUIKitTools.h; sourceTree = "<group>"; };
-		22FFC9731C9656F3009EF3F4 /* SAMPopLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopLists.h; sourceTree = "<group>"; };
-		22FFC9741C9656F3009EF3F4 /* SAMPopLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopLists.m; sourceTree = "<group>"; };
-		22FFC9751C9656F3009EF3F4 /* SAMPopLists.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMPopLists.xib; sourceTree = "<group>"; };
-		22FFC9771C9656F3009EF3F4 /* SAMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMDatePicker.h; sourceTree = "<group>"; };
-		22FFC9781C9656F3009EF3F4 /* SAMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMDatePicker.m; sourceTree = "<group>"; };
-		22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMDatePicker.xib; sourceTree = "<group>"; };
-		22FFC9931C96570F009EF3F4 /* UITOOLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITOOLs.h; sourceTree = "<group>"; };
-		22FFC9951C966251009EF3F4 /* CheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
-		22FFC9961C966251009EF3F4 /* CheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBox.m; sourceTree = "<group>"; };
+		22FFC9CB1C968955009EF3F4 /* CALayer+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9CC1C968955009EF3F4 /* CALayer+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9CD1C968955009EF3F4 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		22FFC9CF1C968955009EF3F4 /* NSArray+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9D01C968955009EF3F4 /* NSArray+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9D21C968955009EF3F4 /* NSData+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9D31C968955009EF3F4 /* NSData+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9D51C968955009EF3F4 /* NSDate+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9D61C968955009EF3F4 /* NSDate+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9D81C968955009EF3F4 /* NSNumber+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9D91C968955009EF3F4 /* NSNumber+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9DB1C968955009EF3F4 /* NSObject+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9DC1C968955009EF3F4 /* NSObject+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9DE1C968955009EF3F4 /* NSString+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9DF1C968955009EF3F4 /* NSString+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9E11C968955009EF3F4 /* UIAlertController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9E21C968955009EF3F4 /* UIAlertController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9E41C968955009EF3F4 /* UIApplication+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9E51C968955009EF3F4 /* UIApplication+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9E71C968955009EF3F4 /* UIBarButtonItem+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9E81C968955009EF3F4 /* UIBarButtonItem+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9EA1C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RemoveHighlightedEffect.h"; sourceTree = "<group>"; };
+		22FFC9EB1C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RemoveHighlightedEffect.m"; sourceTree = "<group>"; };
+		22FFC9ED1C968955009EF3F4 /* UIColor+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9EE1C968955009EF3F4 /* UIColor+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9F01C968955009EF3F4 /* UIDatePicker+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9F11C968955009EF3F4 /* UIDatePicker+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9F31C968955009EF3F4 /* UIImage+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9F41C968955009EF3F4 /* UIImage+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9F61C968955009EF3F4 /* UILabel+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9F71C968955009EF3F4 /* UILabel+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9F91C968955009EF3F4 /* UINavigationController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9FA1C968955009EF3F4 /* UINavigationController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9FC1C968955009EF3F4 /* UITabBarItem+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFC9FD1C968955009EF3F4 /* UITabBarItem+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFC9FF1C968955009EF3F4 /* UITableViewCell+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFCA001C968955009EF3F4 /* UITableViewCell+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFCA021C968955009EF3F4 /* UITextView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFCA031C968955009EF3F4 /* UITextView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFCA051C968955009EF3F4 /* UIView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFCA061C968955009EF3F4 /* UIView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFCA081C968955009EF3F4 /* UIViewController+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SAMExtension.h"; sourceTree = "<group>"; };
+		22FFCA091C968955009EF3F4 /* UIViewController+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SAMExtension.m"; sourceTree = "<group>"; };
+		22FFCA0A1C968955009EF3F4 /* SAMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeys.h; sourceTree = "<group>"; };
+		22FFCA0B1C968955009EF3F4 /* SAMUIKitTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMUIKitTools.h; sourceTree = "<group>"; };
+		22FFCA0E1C968955009EF3F4 /* CheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
+		22FFCA0F1C968955009EF3F4 /* CheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBox.m; sourceTree = "<group>"; };
+		22FFCA111C968955009EF3F4 /* SAMPopLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopLists.h; sourceTree = "<group>"; };
+		22FFCA121C968955009EF3F4 /* SAMPopLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopLists.m; sourceTree = "<group>"; };
+		22FFCA131C968955009EF3F4 /* SAMPopLists.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMPopLists.xib; sourceTree = "<group>"; };
+		22FFCA151C968955009EF3F4 /* SAMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMDatePicker.h; sourceTree = "<group>"; };
+		22FFCA161C968955009EF3F4 /* SAMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMDatePicker.m; sourceTree = "<group>"; };
+		22FFCA171C968955009EF3F4 /* SAMDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMDatePicker.xib; sourceTree = "<group>"; };
+		22FFCA181C968955009EF3F4 /* UITOOLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITOOLs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +181,7 @@
 		225086E91C8E639D00A5245C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC92D1C9656F3009EF3F4 /* SAMUIKitTools */,
+				22FFC9C81C968955009EF3F4 /* SAMUIKitTools */,
 				225086ED1C8E639D00A5245C /* AppDelegate.h */,
 				225086EE1C8E639D00A5245C /* AppDelegate.m */,
 				225086F01C8E639D00A5245C /* ViewController.h */,
@@ -221,273 +221,273 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		22FFC92D1C9656F3009EF3F4 /* SAMUIKitTools */ = {
+		22FFC9C81C968955009EF3F4 /* SAMUIKitTools */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC92E1C9656F3009EF3F4 /* Categories */,
-				22FFC96F1C9656F3009EF3F4 /* SAMKeys.h */,
-				22FFC9701C9656F3009EF3F4 /* SAMUIKitTools.h */,
-				22FFC9711C9656F3009EF3F4 /* UITOOLs */,
+				22FFC9C91C968955009EF3F4 /* Categories */,
+				22FFCA0A1C968955009EF3F4 /* SAMKeys.h */,
+				22FFCA0B1C968955009EF3F4 /* SAMUIKitTools.h */,
+				22FFCA0C1C968955009EF3F4 /* UITOOLs */,
 			);
 			path = SAMUIKitTools;
 			sourceTree = "<group>";
 		};
-		22FFC92E1C9656F3009EF3F4 /* Categories */ = {
+		22FFC9C91C968955009EF3F4 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC92F1C9656F3009EF3F4 /* CALayer */,
-				22FFC9321C9656F3009EF3F4 /* Categories.h */,
-				22FFC9331C9656F3009EF3F4 /* NSArray */,
-				22FFC9361C9656F3009EF3F4 /* NSData */,
-				22FFC9391C9656F3009EF3F4 /* NSDate */,
-				22FFC93C1C9656F3009EF3F4 /* NSNumber */,
-				22FFC93F1C9656F3009EF3F4 /* NSObject */,
-				22FFC9421C9656F3009EF3F4 /* NSString */,
-				22FFC9451C9656F3009EF3F4 /* UIAlertViewController */,
-				22FFC9481C9656F3009EF3F4 /* UIApplication */,
-				22FFC94B1C9656F3009EF3F4 /* UIBarButtonItem */,
-				22FFC94E1C9656F3009EF3F4 /* UIButton */,
-				22FFC9511C9656F3009EF3F4 /* UIColor */,
-				22FFC9541C9656F3009EF3F4 /* UIDatePicker */,
-				22FFC9571C9656F3009EF3F4 /* UIImage */,
-				22FFC95A1C9656F3009EF3F4 /* UILabel */,
-				22FFC95D1C9656F3009EF3F4 /* UINavigationController */,
-				22FFC9601C9656F3009EF3F4 /* UITabBarItem */,
-				22FFC9631C9656F3009EF3F4 /* UITableViewCell */,
-				22FFC9661C9656F3009EF3F4 /* UITextView */,
-				22FFC9691C9656F3009EF3F4 /* UIView */,
-				22FFC96C1C9656F3009EF3F4 /* UIViewController */,
+				22FFC9CA1C968955009EF3F4 /* CALayer */,
+				22FFC9CD1C968955009EF3F4 /* Categories.h */,
+				22FFC9CE1C968955009EF3F4 /* NSArray */,
+				22FFC9D11C968955009EF3F4 /* NSData */,
+				22FFC9D41C968955009EF3F4 /* NSDate */,
+				22FFC9D71C968955009EF3F4 /* NSNumber */,
+				22FFC9DA1C968955009EF3F4 /* NSObject */,
+				22FFC9DD1C968955009EF3F4 /* NSString */,
+				22FFC9E01C968955009EF3F4 /* UIAlertViewController */,
+				22FFC9E31C968955009EF3F4 /* UIApplication */,
+				22FFC9E61C968955009EF3F4 /* UIBarButtonItem */,
+				22FFC9E91C968955009EF3F4 /* UIButton */,
+				22FFC9EC1C968955009EF3F4 /* UIColor */,
+				22FFC9EF1C968955009EF3F4 /* UIDatePicker */,
+				22FFC9F21C968955009EF3F4 /* UIImage */,
+				22FFC9F51C968955009EF3F4 /* UILabel */,
+				22FFC9F81C968955009EF3F4 /* UINavigationController */,
+				22FFC9FB1C968955009EF3F4 /* UITabBarItem */,
+				22FFC9FE1C968955009EF3F4 /* UITableViewCell */,
+				22FFCA011C968955009EF3F4 /* UITextView */,
+				22FFCA041C968955009EF3F4 /* UIView */,
+				22FFCA071C968955009EF3F4 /* UIViewController */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		22FFC92F1C9656F3009EF3F4 /* CALayer */ = {
+		22FFC9CA1C968955009EF3F4 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9301C9656F3009EF3F4 /* CALayer+SAMExtension.h */,
-				22FFC9311C9656F3009EF3F4 /* CALayer+SAMExtension.m */,
+				22FFC9CB1C968955009EF3F4 /* CALayer+SAMExtension.h */,
+				22FFC9CC1C968955009EF3F4 /* CALayer+SAMExtension.m */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
 		};
-		22FFC9331C9656F3009EF3F4 /* NSArray */ = {
+		22FFC9CE1C968955009EF3F4 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9341C9656F3009EF3F4 /* NSArray+SAMExtension.h */,
-				22FFC9351C9656F3009EF3F4 /* NSArray+SAMExtension.m */,
+				22FFC9CF1C968955009EF3F4 /* NSArray+SAMExtension.h */,
+				22FFC9D01C968955009EF3F4 /* NSArray+SAMExtension.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
 		};
-		22FFC9361C9656F3009EF3F4 /* NSData */ = {
+		22FFC9D11C968955009EF3F4 /* NSData */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9371C9656F3009EF3F4 /* NSData+SAMExtension.h */,
-				22FFC9381C9656F3009EF3F4 /* NSData+SAMExtension.m */,
+				22FFC9D21C968955009EF3F4 /* NSData+SAMExtension.h */,
+				22FFC9D31C968955009EF3F4 /* NSData+SAMExtension.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
 		};
-		22FFC9391C9656F3009EF3F4 /* NSDate */ = {
+		22FFC9D41C968955009EF3F4 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC93A1C9656F3009EF3F4 /* NSDate+SAMExtension.h */,
-				22FFC93B1C9656F3009EF3F4 /* NSDate+SAMExtension.m */,
+				22FFC9D51C968955009EF3F4 /* NSDate+SAMExtension.h */,
+				22FFC9D61C968955009EF3F4 /* NSDate+SAMExtension.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
 		};
-		22FFC93C1C9656F3009EF3F4 /* NSNumber */ = {
+		22FFC9D71C968955009EF3F4 /* NSNumber */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC93D1C9656F3009EF3F4 /* NSNumber+SAMExtension.h */,
-				22FFC93E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m */,
+				22FFC9D81C968955009EF3F4 /* NSNumber+SAMExtension.h */,
+				22FFC9D91C968955009EF3F4 /* NSNumber+SAMExtension.m */,
 			);
 			path = NSNumber;
 			sourceTree = "<group>";
 		};
-		22FFC93F1C9656F3009EF3F4 /* NSObject */ = {
+		22FFC9DA1C968955009EF3F4 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9401C9656F3009EF3F4 /* NSObject+SAMExtension.h */,
-				22FFC9411C9656F3009EF3F4 /* NSObject+SAMExtension.m */,
+				22FFC9DB1C968955009EF3F4 /* NSObject+SAMExtension.h */,
+				22FFC9DC1C968955009EF3F4 /* NSObject+SAMExtension.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
 		};
-		22FFC9421C9656F3009EF3F4 /* NSString */ = {
+		22FFC9DD1C968955009EF3F4 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9431C9656F3009EF3F4 /* NSString+SAMExtension.h */,
-				22FFC9441C9656F3009EF3F4 /* NSString+SAMExtension.m */,
+				22FFC9DE1C968955009EF3F4 /* NSString+SAMExtension.h */,
+				22FFC9DF1C968955009EF3F4 /* NSString+SAMExtension.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		22FFC9451C9656F3009EF3F4 /* UIAlertViewController */ = {
+		22FFC9E01C968955009EF3F4 /* UIAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9461C9656F3009EF3F4 /* UIAlertController+SAMExtension.h */,
-				22FFC9471C9656F3009EF3F4 /* UIAlertController+SAMExtension.m */,
+				22FFC9E11C968955009EF3F4 /* UIAlertController+SAMExtension.h */,
+				22FFC9E21C968955009EF3F4 /* UIAlertController+SAMExtension.m */,
 			);
 			path = UIAlertViewController;
 			sourceTree = "<group>";
 		};
-		22FFC9481C9656F3009EF3F4 /* UIApplication */ = {
+		22FFC9E31C968955009EF3F4 /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9491C9656F3009EF3F4 /* UIApplication+SAMExtension.h */,
-				22FFC94A1C9656F3009EF3F4 /* UIApplication+SAMExtension.m */,
+				22FFC9E41C968955009EF3F4 /* UIApplication+SAMExtension.h */,
+				22FFC9E51C968955009EF3F4 /* UIApplication+SAMExtension.m */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
 		};
-		22FFC94B1C9656F3009EF3F4 /* UIBarButtonItem */ = {
+		22FFC9E61C968955009EF3F4 /* UIBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC94C1C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.h */,
-				22FFC94D1C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.m */,
+				22FFC9E71C968955009EF3F4 /* UIBarButtonItem+SAMExtension.h */,
+				22FFC9E81C968955009EF3F4 /* UIBarButtonItem+SAMExtension.m */,
 			);
 			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
-		22FFC94E1C9656F3009EF3F4 /* UIButton */ = {
+		22FFC9E91C968955009EF3F4 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC94F1C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.h */,
-				22FFC9501C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m */,
+				22FFC9EA1C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.h */,
+				22FFC9EB1C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
 		};
-		22FFC9511C9656F3009EF3F4 /* UIColor */ = {
+		22FFC9EC1C968955009EF3F4 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9521C9656F3009EF3F4 /* UIColor+SAMExtension.h */,
-				22FFC9531C9656F3009EF3F4 /* UIColor+SAMExtension.m */,
+				22FFC9ED1C968955009EF3F4 /* UIColor+SAMExtension.h */,
+				22FFC9EE1C968955009EF3F4 /* UIColor+SAMExtension.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-		22FFC9541C9656F3009EF3F4 /* UIDatePicker */ = {
+		22FFC9EF1C968955009EF3F4 /* UIDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9551C9656F3009EF3F4 /* UIDatePicker+SAMExtension.h */,
-				22FFC9561C9656F3009EF3F4 /* UIDatePicker+SAMExtension.m */,
+				22FFC9F01C968955009EF3F4 /* UIDatePicker+SAMExtension.h */,
+				22FFC9F11C968955009EF3F4 /* UIDatePicker+SAMExtension.m */,
 			);
 			path = UIDatePicker;
 			sourceTree = "<group>";
 		};
-		22FFC9571C9656F3009EF3F4 /* UIImage */ = {
+		22FFC9F21C968955009EF3F4 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9581C9656F3009EF3F4 /* UIImage+SAMExtension.h */,
-				22FFC9591C9656F3009EF3F4 /* UIImage+SAMExtension.m */,
+				22FFC9F31C968955009EF3F4 /* UIImage+SAMExtension.h */,
+				22FFC9F41C968955009EF3F4 /* UIImage+SAMExtension.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
 		};
-		22FFC95A1C9656F3009EF3F4 /* UILabel */ = {
+		22FFC9F51C968955009EF3F4 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC95B1C9656F3009EF3F4 /* UILabel+SAMExtension.h */,
-				22FFC95C1C9656F3009EF3F4 /* UILabel+SAMExtension.m */,
+				22FFC9F61C968955009EF3F4 /* UILabel+SAMExtension.h */,
+				22FFC9F71C968955009EF3F4 /* UILabel+SAMExtension.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
 		};
-		22FFC95D1C9656F3009EF3F4 /* UINavigationController */ = {
+		22FFC9F81C968955009EF3F4 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC95E1C9656F3009EF3F4 /* UINavigationController+SAMExtension.h */,
-				22FFC95F1C9656F3009EF3F4 /* UINavigationController+SAMExtension.m */,
+				22FFC9F91C968955009EF3F4 /* UINavigationController+SAMExtension.h */,
+				22FFC9FA1C968955009EF3F4 /* UINavigationController+SAMExtension.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
-		22FFC9601C9656F3009EF3F4 /* UITabBarItem */ = {
+		22FFC9FB1C968955009EF3F4 /* UITabBarItem */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9611C9656F3009EF3F4 /* UITabBarItem+SAMExtension.h */,
-				22FFC9621C9656F3009EF3F4 /* UITabBarItem+SAMExtension.m */,
+				22FFC9FC1C968955009EF3F4 /* UITabBarItem+SAMExtension.h */,
+				22FFC9FD1C968955009EF3F4 /* UITabBarItem+SAMExtension.m */,
 			);
 			path = UITabBarItem;
 			sourceTree = "<group>";
 		};
-		22FFC9631C9656F3009EF3F4 /* UITableViewCell */ = {
+		22FFC9FE1C968955009EF3F4 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9641C9656F3009EF3F4 /* UITableViewCell+SAMExtension.h */,
-				22FFC9651C9656F3009EF3F4 /* UITableViewCell+SAMExtension.m */,
+				22FFC9FF1C968955009EF3F4 /* UITableViewCell+SAMExtension.h */,
+				22FFCA001C968955009EF3F4 /* UITableViewCell+SAMExtension.m */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
-		22FFC9661C9656F3009EF3F4 /* UITextView */ = {
+		22FFCA011C968955009EF3F4 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9671C9656F3009EF3F4 /* UITextView+SAMExtension.h */,
-				22FFC9681C9656F3009EF3F4 /* UITextView+SAMExtension.m */,
+				22FFCA021C968955009EF3F4 /* UITextView+SAMExtension.h */,
+				22FFCA031C968955009EF3F4 /* UITextView+SAMExtension.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
 		};
-		22FFC9691C9656F3009EF3F4 /* UIView */ = {
+		22FFCA041C968955009EF3F4 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC96A1C9656F3009EF3F4 /* UIView+SAMExtension.h */,
-				22FFC96B1C9656F3009EF3F4 /* UIView+SAMExtension.m */,
+				22FFCA051C968955009EF3F4 /* UIView+SAMExtension.h */,
+				22FFCA061C968955009EF3F4 /* UIView+SAMExtension.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		22FFC96C1C9656F3009EF3F4 /* UIViewController */ = {
+		22FFCA071C968955009EF3F4 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC96D1C9656F3009EF3F4 /* UIViewController+SAMExtension.h */,
-				22FFC96E1C9656F3009EF3F4 /* UIViewController+SAMExtension.m */,
+				22FFCA081C968955009EF3F4 /* UIViewController+SAMExtension.h */,
+				22FFCA091C968955009EF3F4 /* UIViewController+SAMExtension.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
-		22FFC9711C9656F3009EF3F4 /* UITOOLs */ = {
+		22FFCA0C1C968955009EF3F4 /* UITOOLs */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9941C966200009EF3F4 /* CheckBoxButton */,
-				22FFC9721C9656F3009EF3F4 /* PopList */,
-				22FFC9761C9656F3009EF3F4 /* UIDatePicker */,
-				22FFC9931C96570F009EF3F4 /* UITOOLs.h */,
+				22FFCA0D1C968955009EF3F4 /* CheckBoxButton */,
+				22FFCA101C968955009EF3F4 /* PopList */,
+				22FFCA141C968955009EF3F4 /* UIDatePicker */,
+				22FFCA181C968955009EF3F4 /* UITOOLs.h */,
 			);
 			path = UITOOLs;
 			sourceTree = "<group>";
 		};
-		22FFC9721C9656F3009EF3F4 /* PopList */ = {
+		22FFCA0D1C968955009EF3F4 /* CheckBoxButton */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9731C9656F3009EF3F4 /* SAMPopLists.h */,
-				22FFC9741C9656F3009EF3F4 /* SAMPopLists.m */,
-				22FFC9751C9656F3009EF3F4 /* SAMPopLists.xib */,
+				22FFCA0E1C968955009EF3F4 /* CheckBox.h */,
+				22FFCA0F1C968955009EF3F4 /* CheckBox.m */,
+			);
+			path = CheckBoxButton;
+			sourceTree = "<group>";
+		};
+		22FFCA101C968955009EF3F4 /* PopList */ = {
+			isa = PBXGroup;
+			children = (
+				22FFCA111C968955009EF3F4 /* SAMPopLists.h */,
+				22FFCA121C968955009EF3F4 /* SAMPopLists.m */,
+				22FFCA131C968955009EF3F4 /* SAMPopLists.xib */,
 			);
 			path = PopList;
 			sourceTree = "<group>";
 		};
-		22FFC9761C9656F3009EF3F4 /* UIDatePicker */ = {
+		22FFCA141C968955009EF3F4 /* UIDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				22FFC9771C9656F3009EF3F4 /* SAMDatePicker.h */,
-				22FFC9781C9656F3009EF3F4 /* SAMDatePicker.m */,
-				22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */,
+				22FFCA151C968955009EF3F4 /* SAMDatePicker.h */,
+				22FFCA161C968955009EF3F4 /* SAMDatePicker.m */,
+				22FFCA171C968955009EF3F4 /* SAMDatePicker.xib */,
 			);
 			path = UIDatePicker;
-			sourceTree = "<group>";
-		};
-		22FFC9941C966200009EF3F4 /* CheckBoxButton */ = {
-			isa = PBXGroup;
-			children = (
-				22FFC9951C966251009EF3F4 /* CheckBox.h */,
-				22FFC9961C966251009EF3F4 /* CheckBox.m */,
-			);
-			path = CheckBoxButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,6 +552,7 @@
 		225086DF1C8E639D00A5245C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SAM;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wydatas;
 				TargetAttributes = {
@@ -593,11 +594,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FFC9921C9656F3009EF3F4 /* SAMDatePicker.xib in Resources */,
+				22FFCA321C968955009EF3F4 /* SAMDatePicker.xib in Resources */,
 				225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */,
 				225086F71C8E639D00A5245C /* Assets.xcassets in Resources */,
 				225086F51C8E639D00A5245C /* Main.storyboard in Resources */,
-				22FFC9901C9656F3009EF3F4 /* SAMPopLists.xib in Resources */,
+				22FFCA301C968955009EF3F4 /* SAMPopLists.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,33 +623,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FFC98E1C9656F3009EF3F4 /* UIViewController+SAMExtension.m in Sources */,
-				22FFC97C1C9656F3009EF3F4 /* NSData+SAMExtension.m in Sources */,
+				22FFCA2D1C968955009EF3F4 /* UIViewController+SAMExtension.m in Sources */,
+				22FFCA311C968955009EF3F4 /* SAMDatePicker.m in Sources */,
+				22FFCA1B1C968955009EF3F4 /* NSData+SAMExtension.m in Sources */,
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
-				22FFC97B1C9656F3009EF3F4 /* NSArray+SAMExtension.m in Sources */,
-				22FFC97D1C9656F3009EF3F4 /* NSDate+SAMExtension.m in Sources */,
+				22FFCA2E1C968955009EF3F4 /* CheckBox.m in Sources */,
+				22FFCA1A1C968955009EF3F4 /* NSArray+SAMExtension.m in Sources */,
+				22FFCA1C1C968955009EF3F4 /* NSDate+SAMExtension.m in Sources */,
 				225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */,
-				22FFC97E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m in Sources */,
-				22FFC9841C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m in Sources */,
-				22FFC98D1C9656F3009EF3F4 /* UIView+SAMExtension.m in Sources */,
-				22FFC9971C966251009EF3F4 /* CheckBox.m in Sources */,
-				22FFC9911C9656F3009EF3F4 /* SAMDatePicker.m in Sources */,
-				22FFC9891C9656F3009EF3F4 /* UINavigationController+SAMExtension.m in Sources */,
+				22FFCA1D1C968955009EF3F4 /* NSNumber+SAMExtension.m in Sources */,
+				22FFCA231C968955009EF3F4 /* UIButton+RemoveHighlightedEffect.m in Sources */,
+				22FFCA2C1C968955009EF3F4 /* UIView+SAMExtension.m in Sources */,
+				22FFCA281C968955009EF3F4 /* UINavigationController+SAMExtension.m in Sources */,
 				225086EC1C8E639D00A5245C /* main.m in Sources */,
-				22FFC97F1C9656F3009EF3F4 /* NSObject+SAMExtension.m in Sources */,
-				22FFC9871C9656F3009EF3F4 /* UIImage+SAMExtension.m in Sources */,
-				22FFC98C1C9656F3009EF3F4 /* UITextView+SAMExtension.m in Sources */,
-				22FFC9861C9656F3009EF3F4 /* UIDatePicker+SAMExtension.m in Sources */,
-				22FFC9831C9656F3009EF3F4 /* UIBarButtonItem+SAMExtension.m in Sources */,
-				22FFC97A1C9656F3009EF3F4 /* CALayer+SAMExtension.m in Sources */,
-				22FFC98F1C9656F3009EF3F4 /* SAMPopLists.m in Sources */,
-				22FFC9801C9656F3009EF3F4 /* NSString+SAMExtension.m in Sources */,
-				22FFC98B1C9656F3009EF3F4 /* UITableViewCell+SAMExtension.m in Sources */,
-				22FFC9821C9656F3009EF3F4 /* UIApplication+SAMExtension.m in Sources */,
-				22FFC98A1C9656F3009EF3F4 /* UITabBarItem+SAMExtension.m in Sources */,
-				22FFC9811C9656F3009EF3F4 /* UIAlertController+SAMExtension.m in Sources */,
-				22FFC9881C9656F3009EF3F4 /* UILabel+SAMExtension.m in Sources */,
-				22FFC9851C9656F3009EF3F4 /* UIColor+SAMExtension.m in Sources */,
+				22FFCA1E1C968955009EF3F4 /* NSObject+SAMExtension.m in Sources */,
+				22FFCA261C968955009EF3F4 /* UIImage+SAMExtension.m in Sources */,
+				22FFCA2B1C968955009EF3F4 /* UITextView+SAMExtension.m in Sources */,
+				22FFCA251C968955009EF3F4 /* UIDatePicker+SAMExtension.m in Sources */,
+				22FFCA221C968955009EF3F4 /* UIBarButtonItem+SAMExtension.m in Sources */,
+				22FFCA191C968955009EF3F4 /* CALayer+SAMExtension.m in Sources */,
+				22FFCA1F1C968955009EF3F4 /* NSString+SAMExtension.m in Sources */,
+				22FFCA2A1C968955009EF3F4 /* UITableViewCell+SAMExtension.m in Sources */,
+				22FFCA211C968955009EF3F4 /* UIApplication+SAMExtension.m in Sources */,
+				22FFCA291C968955009EF3F4 /* UITabBarItem+SAMExtension.m in Sources */,
+				22FFCA201C968955009EF3F4 /* UIAlertController+SAMExtension.m in Sources */,
+				22FFCA2F1C968955009EF3F4 /* SAMPopLists.m in Sources */,
+				22FFCA271C968955009EF3F4 /* UILabel+SAMExtension.m in Sources */,
+				22FFCA241C968955009EF3F4 /* UIColor+SAMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
