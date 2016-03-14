@@ -105,7 +105,7 @@ static NSString *const reuserID = @"62529bff58cd292a9e5709b4c04e3605";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuserID];
         cell.textLabel.font = SYS_FONT(15.f);
-        cell.backgroundColor = [UIColor steelBlueColor];
+        cell.backgroundColor = [UIColor steelBlueColor]; // 103 G:153 B:170 A:1.0]
         cell.cornerRadius = 5.f;
         cell.textLabel.textColor = [UIColor whiteColor];
     }
