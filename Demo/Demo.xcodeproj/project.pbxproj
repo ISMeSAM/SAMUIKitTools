@@ -40,6 +40,7 @@
 		22FFC9901C9656F3009EF3F4 /* SAMPopLists.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFC9751C9656F3009EF3F4 /* SAMPopLists.xib */; };
 		22FFC9911C9656F3009EF3F4 /* SAMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9781C9656F3009EF3F4 /* SAMDatePicker.m */; };
 		22FFC9921C9656F3009EF3F4 /* SAMDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */; };
+		22FFC9971C966251009EF3F4 /* CheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC9961C966251009EF3F4 /* CheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		22FFC9781C9656F3009EF3F4 /* SAMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMDatePicker.m; sourceTree = "<group>"; };
 		22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMDatePicker.xib; sourceTree = "<group>"; };
 		22FFC9931C96570F009EF3F4 /* UITOOLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITOOLs.h; sourceTree = "<group>"; };
+		22FFC9951C966251009EF3F4 /* CheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
+		22FFC9961C966251009EF3F4 /* CheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +453,7 @@
 		22FFC9711C9656F3009EF3F4 /* UITOOLs */ = {
 			isa = PBXGroup;
 			children = (
+				22FFC9941C966200009EF3F4 /* CheckBoxButton */,
 				22FFC9721C9656F3009EF3F4 /* PopList */,
 				22FFC9761C9656F3009EF3F4 /* UIDatePicker */,
 				22FFC9931C96570F009EF3F4 /* UITOOLs.h */,
@@ -475,6 +479,15 @@
 				22FFC9791C9656F3009EF3F4 /* SAMDatePicker.xib */,
 			);
 			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		22FFC9941C966200009EF3F4 /* CheckBoxButton */ = {
+			isa = PBXGroup;
+			children = (
+				22FFC9951C966251009EF3F4 /* CheckBox.h */,
+				22FFC9961C966251009EF3F4 /* CheckBox.m */,
+			);
+			path = CheckBoxButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,6 +631,7 @@
 				22FFC97E1C9656F3009EF3F4 /* NSNumber+SAMExtension.m in Sources */,
 				22FFC9841C9656F3009EF3F4 /* UIButton+RemoveHighlightedEffect.m in Sources */,
 				22FFC98D1C9656F3009EF3F4 /* UIView+SAMExtension.m in Sources */,
+				22FFC9971C966251009EF3F4 /* CheckBox.m in Sources */,
 				22FFC9911C9656F3009EF3F4 /* SAMDatePicker.m in Sources */,
 				22FFC9891C9656F3009EF3F4 /* UINavigationController+SAMExtension.m in Sources */,
 				225086EC1C8E639D00A5245C /* main.m in Sources */,

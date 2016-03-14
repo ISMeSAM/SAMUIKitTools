@@ -8,9 +8,17 @@
 
 @interface SAMPopLists : UIView
 
-@property (nonatomic , copy) void(^selectItemAction)(UITableViewCell *cel) __deprecated_msg("Use 'selectItemIndexPathAction' ");
 
 @property (nonatomic , copy) void(^selectItemIndexPathAction)(UITableViewCell *cel,NSIndexPath *indexPath);
+
+
+@property (nonatomic , strong) UIColor *cellColor ;
+@property (nonatomic , assign) CGFloat cellCornerRadius;
+@property (nonatomic , strong) UIFont *cellTextLabelFont ;
+@property (nonatomic , strong) UIColor *textLabelColor ;
+@property (nonatomic , strong) UIImage *cellIcon ;
+
+
 
 /**
  *  pop
@@ -51,4 +59,6 @@
  */
 + (instancetype)popListsWithArray:(NSArray *)items withView:(UIView *)targetView style:(UIImageEffectType)style __deprecated_msg("Use 'popListsWithArray:style:'");
 
+
 @end
+
