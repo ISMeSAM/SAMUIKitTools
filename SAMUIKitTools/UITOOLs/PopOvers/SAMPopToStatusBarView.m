@@ -11,9 +11,6 @@
 
 @interface SAMPopToStatusBarView()
 
-//@property (nonatomic , copy) NSString *message;
-
-//@property (nonatomic , strong) UILabel *messageLabel ;
 @property (nonatomic , strong) UIButton *messageButton ;
 
 @end
@@ -71,7 +68,7 @@ static double _startPostion_y = -20;
     [popView.messageButton setTitleColor:aMessageColor forState:UIControlStateNormal];
     [popView.messageButton setBackgroundImage:[UIImage image4ContextWithColor:aColor size:popView.messageButton.size] forState:UIControlStateNormal];
     [aView addSubview:popView];
-    [aView bringSubviewToFront:[UIApplication sharedApplication].keyWindow];
+    [aView bringSubviewToFront:[[[UIApplication sharedApplication] delegate] window]];
     [UIView animateWithDuration:0.25 animations:^{
         popView.alpha = 1;
         popView.y = 0;

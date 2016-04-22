@@ -56,7 +56,6 @@
             image = [image applyExtraLightEffect];
             break;
         default:
-            image = [image applyLightEffect];
             break;
     }
     

@@ -3,7 +3,7 @@
 
 
 #import "SAMPopLists.h"
-#define kRowH 44.f
+
 
 @interface SAMPopLists()
 <
@@ -22,6 +22,8 @@ UITableViewDelegate
 
 @implementation SAMPopLists
 
+
+static const CGFloat kRowH = 44.f;
 
 
 + (instancetype)popListsWithArray:(NSArray *)items withView:(UIView *)targetView
@@ -72,12 +74,15 @@ UITableViewDelegate
     }else{
         pop.hightConstrains.constant = SCREEN_HEIGHT - 5 * kRowH;
     }
+    
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    
     pop.cornerRadius = 5.f;
-    pop.bounds = KEY_WINDOW.bounds;
-    pop.center = KEY_WINDOW.center;
+    pop.bounds = window.bounds;
+    pop.center = window.center;
     
     pop.alpha = 0;
-    [KEY_WINDOW addSubview:pop];
+    [window addSubview:pop];
     [UIView animateWithDuration:0.25 animations:^{
         pop.alpha = 1;
     }];

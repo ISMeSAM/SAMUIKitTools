@@ -10,6 +10,10 @@
  */
 typedef NS_ENUM(NSUInteger, UIImageEffectType){
     /**
+     *  none
+     */
+    UIImageEffectType_none,
+    /**
      *  灯光效果
      */
     UIImageEffectTypeLightEffect,
