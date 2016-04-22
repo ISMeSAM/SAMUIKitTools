@@ -18,6 +18,12 @@ typedef void(^buttonAction)(UIDatePicker *sender);
 @property (nonatomic , copy) void(^datePickerValueChanged)(UIDatePicker *aDatePicker);
 
 
+@property (nonatomic , strong) NSDate *maximumDate ;
+
+@property (nonatomic , strong) NSDate *minimumDate ;
+
+@property (nonatomic , strong) UIColor *datePickerBackgroundColor ;
+
 + (instancetype)datePicker;
 
 

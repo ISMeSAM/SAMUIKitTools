@@ -25,7 +25,7 @@
 #import "NSArray+SAMExtension.h"
 #import "UITextView+SAMExtension.h"
 #import "UIAlertController+SAMExtension.h"
-
+#import "UIView+SAMGestureRecognizerAction.h"
 
 #import "SAMKeys.h"
 

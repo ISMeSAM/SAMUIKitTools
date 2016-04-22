@@ -18,10 +18,28 @@
     [view.datePicker addTarget:view action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
     view.datePicker.maximumDate = [NSDate date];
     view.datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
-    
+    view.backgroundColor = [UIColor clearColor];
     return view;
 }
 
+- (void)setMaximumDate:(NSDate *)maximumDate
+{
+    _maximumDate = maximumDate;
+    self.datePicker.maximumDate = maximumDate;
+}
+
+- (void)setMinimumDate:(NSDate *)minimumDate
+{
+    _minimumDate = minimumDate;
+    self.datePicker.minimumDate = minimumDate;
+    
+}
+
+- (void)setDatePickerBackgroundColor:(UIColor *)datePickerBackgroundColor
+{
+    _datePickerBackgroundColor = datePickerBackgroundColor;
+    self.backgroundColor = datePickerBackgroundColor;
+}
 
 
 
@@ -46,50 +64,6 @@
     if (self.doneAction) {
         self.doneAction(self.datePicker);
     }
-}
-
-
-
-#pragma mark - todo
-
-- (UIView *)setupToolBarViews
-{
-    UIView *toolBarView = [[UIView alloc] init];
-    
-    toolBarView.width = self.width;
-    toolBarView.height = 35.f;
-    toolBarView.x = 0;
-    toolBarView.y = 0;
-    
-    // cancel
-    UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [toolBarView addSubview:cancelButton];
-    [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-    [cancelButton sizeToFit];
-    
-    cancelButton.x = 16.f;
-    cancelButton.center_y = toolBarView.center_y;
-    
-    
-    [cancelButton addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    // doneButton
-    UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [toolBarView addSubview:doneButton];
-    [doneButton setTitle:@"完成" forState:UIControlStateNormal];
-    [doneButton sizeToFit];
-    
-    CGFloat width = doneButton.width;
-    CGFloat doneX = self.width - width - 16.f;
-    
-    doneButton.x = doneX;
-    doneButton.center_y = toolBarView.center_y;
-    
-    
-    [doneButton addTarget:self action:@selector(doneAction:) forControlEvents:UIControlEventTouchUpInside];
-    
-    return toolBarView;
 }
 
 
