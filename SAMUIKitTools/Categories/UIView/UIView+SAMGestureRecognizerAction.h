@@ -14,6 +14,7 @@ typedef void(^SAMGestureRecognizer)(UIGestureRecognizer *_Nonnull aGestureRecogn
 
 @property (nullable , nonatomic , copy) void(^longPressAction)(UILongPressGestureRecognizer *_Nonnull lonePressGestureRecognizer);
 
+/**  Right  Left */
 @property (nullable , nonatomic , copy) void(^swipeAction)(UISwipeGestureRecognizer *_Nonnull swipeGestureRecognizer);
 
 @property (nullable , nonatomic , copy) void(^pinchAction)(UIPinchGestureRecognizer *_Nonnull pinchGestureRecognizer);

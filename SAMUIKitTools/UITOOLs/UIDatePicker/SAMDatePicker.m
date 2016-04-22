@@ -12,15 +12,65 @@
 @implementation SAMDatePicker
 
 
+static SAMDatePicker *_DatePicker;
+
 + (instancetype)datePicker
 {
-    SAMDatePicker *view = [[[NSBundle mainBundle] loadNibNamed:@"SAMDatePicker" owner:nil options:nil] lastObject];
-    [view.datePicker addTarget:view action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
-    view.datePicker.maximumDate = [NSDate date];
-    view.datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
-    view.backgroundColor = [UIColor clearColor];
-    return view;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _DatePicker = [[[NSBundle mainBundle] loadNibNamed:@"SAMDatePicker" owner:nil options:nil] lastObject];
+        [_DatePicker.datePicker addTarget:_DatePicker action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
+        _DatePicker.datePicker.maximumDate = [NSDate date];
+        _DatePicker.datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
+
+    });
+    return _DatePicker;
 }
+
+
+- (void)show
+{
+    UITextField *tx = [self tmpTextField];
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    
+    tx.inputView = [SAMDatePicker datePicker];
+    
+    if (tx.superview == window) {
+        [tx becomeFirstResponder];
+    }else{
+        [window addSubview:tx];
+        [tx becomeFirstResponder];
+    }
+
+}
+
+
+- (void)dismiss
+{
+    UITextField *tx = [self tmpTextField];
+    if (tx.superview == [[[UIApplication sharedApplication] delegate] window]) {
+        [tx resignFirstResponder];
+    }else{
+        [[[[UIApplication sharedApplication] delegate] window] resignFirstResponder];
+    }
+    
+}
+
+
+static UITextField *_tmpTextField;
+
+- (UITextField *)tmpTextField
+{
+    if (!_tmpTextField)
+    {
+        _tmpTextField = [UITextField new];
+        
+    }
+    return _tmpTextField;
+}
+
+
+#pragma mark -
 
 - (void)setMaximumDate:(NSDate *)maximumDate
 {
@@ -43,6 +93,8 @@
 
 
 
+#pragma mark -
+
 - (void)datePickerValueChanged:(UIDatePicker *)aDatePicker
 {
     if (self.datePickerValueChanged) {
@@ -54,6 +106,7 @@
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender
 {
+    [self dismiss];
     if (self.cancelAction) {
         self.cancelAction(self.datePicker);
     }
@@ -61,6 +114,7 @@
 
 - (IBAction)doneAction:(UIBarButtonItem *)sender
 {
+    [self dismiss];
     if (self.doneAction) {
         self.doneAction(self.datePicker);
     }

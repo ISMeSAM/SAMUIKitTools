@@ -35,7 +35,6 @@
 		220644A11CC4C8F600D8A402 /* SAMDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220644861CC4C8F600D8A402 /* SAMDatePicker.xib */; };
 		220644A51CC4CA0E00D8A402 /* SAMPopToStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */; };
 		225074BC1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */; };
-		225074BF1CC75E4F0031832F /* SAMPopToBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074BE1CC75E4F0031832F /* SAMPopToBottomView.m */; };
 		225074C21CC761930031832F /* SAMMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074C11CC761930031832F /* SAMMidViewController.m */; };
 		225086EC1C8E639D00A5245C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EB1C8E639D00A5245C /* main.m */; };
 		225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EE1C8E639D00A5245C /* AppDelegate.m */; };
@@ -45,7 +44,6 @@
 		225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225086F81C8E639D00A5245C /* LaunchScreen.storyboard */; };
 		225087051C8E639D00A5245C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087041C8E639D00A5245C /* DemoTests.m */; };
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
-		22FCCA831CC87C240079A93E /* SAMPopToBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FCCA821CC87C240079A93E /* SAMPopToBottomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +122,6 @@
 		220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopToStatusBarView.m; sourceTree = "<group>"; };
 		225074BA1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMGestureRecognizerAction.h"; sourceTree = "<group>"; };
 		225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMGestureRecognizerAction.m"; sourceTree = "<group>"; };
-		225074BD1CC75E4F0031832F /* SAMPopToBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToBottomView.h; sourceTree = "<group>"; };
-		225074BE1CC75E4F0031832F /* SAMPopToBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopToBottomView.m; sourceTree = "<group>"; };
 		225074C01CC761930031832F /* SAMMidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMidViewController.h; sourceTree = "<group>"; };
 		225074C11CC761930031832F /* SAMMidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMMidViewController.m; sourceTree = "<group>"; };
 		225086E71C8E639D00A5245C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +140,6 @@
 		2250870B1C8E639D00A5245C /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250870F1C8E639D00A5245C /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		225087111C8E639D00A5245C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22FCCA821CC87C240079A93E /* SAMPopToBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMPopToBottomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,9 +445,6 @@
 			children = (
 				220644A31CC4CA0E00D8A402 /* SAMPopToStatusBarView.h */,
 				220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */,
-				225074BD1CC75E4F0031832F /* SAMPopToBottomView.h */,
-				225074BE1CC75E4F0031832F /* SAMPopToBottomView.m */,
-				22FCCA821CC87C240079A93E /* SAMPopToBottomView.xib */,
 			);
 			path = PopOvers;
 			sourceTree = "<group>";
@@ -628,7 +620,6 @@
 			files = (
 				220644A11CC4C8F600D8A402 /* SAMDatePicker.xib in Resources */,
 				225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */,
-				22FCCA831CC87C240079A93E /* SAMPopToBottomView.xib in Resources */,
 				225086F71C8E639D00A5245C /* Assets.xcassets in Resources */,
 				225086F51C8E639D00A5245C /* Main.storyboard in Resources */,
 				2206449F1CC4C8F600D8A402 /* SAMPopLists.xib in Resources */,
@@ -662,7 +653,6 @@
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
 				2206449D1CC4C8F600D8A402 /* CheckBox.m in Sources */,
 				220644891CC4C8F600D8A402 /* NSArray+SAMExtension.m in Sources */,
-				225074BF1CC75E4F0031832F /* SAMPopToBottomView.m in Sources */,
 				2206448B1CC4C8F600D8A402 /* NSDate+SAMExtension.m in Sources */,
 				225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */,
 				2206448C1CC4C8F600D8A402 /* NSNumber+SAMExtension.m in Sources */,

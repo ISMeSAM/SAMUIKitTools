@@ -53,6 +53,7 @@ static const void *kRotationActionKey           = &kRotationActionKey;
     objc_setAssociatedObject(self, kSwipeActionKey, swipeAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionLeft;
     [self addGestureRecognizer:swipe];
 }
 - (void (^)(UISwipeGestureRecognizer * _Nonnull))swipeAction

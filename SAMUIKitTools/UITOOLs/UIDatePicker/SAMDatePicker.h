@@ -7,6 +7,8 @@
 
 typedef void(^buttonAction)(UIDatePicker *sender);
 
+
+
 @interface SAMDatePicker : UIView
 
 @property (nonatomic , copy) void(^cancelAction)(UIDatePicker *sender);
@@ -25,6 +27,8 @@ typedef void(^buttonAction)(UIDatePicker *sender);
 @property (nonatomic , strong) UIColor *datePickerBackgroundColor ;
 
 + (instancetype)datePicker;
+
+- (void)show;
 
 
 

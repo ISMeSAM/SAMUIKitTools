@@ -51,10 +51,9 @@
     }];
     
     [self.view setSwipeAction:^(UISwipeGestureRecognizer *_Nonnull ge){
-        
-        if (UIGestureRecognizerStateBegan == ge.state) {
-            [SAMPopToStatusBarView showStatusBarViewWithMessage:@"Swipe"];
-        }
+       
+        [SAMPopToStatusBarView showStatusBarViewWithMessage:@"Swipe"];
+       
     }];
     
     
@@ -76,12 +75,12 @@
     
     
     __weak typeof(self) weakSelf = self;
-    [self.view setPanAction:^(UIPanGestureRecognizer * _Nonnull ge) {
-        NSLog(@"%@",ge);
-        
-//        imageView.center = [ge velocityInView:weakSelf.view];
-    }];
-    
+//    [self.view setPanAction:^(UIPanGestureRecognizer * _Nonnull ge) {
+//        NSLog(@"%@",ge);
+//        
+////        imageView.center = [ge velocityInView:weakSelf.view];
+//    }];
+//    
 
 }
 

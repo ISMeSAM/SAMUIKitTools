@@ -37,7 +37,7 @@
     
     __weak typeof(self) weakSelf = self;
     
-    [tableView deselectRowAtIndexPath:indexPath animated:1];
+    
 
     switch (indexPath.row)
     {
@@ -63,34 +63,19 @@
         case 2:
         {
             SAMDatePicker *dataPicker = [SAMDatePicker datePicker];
-            dataPicker.datePickerBackgroundColor = [UIColor whiteColor];
-            [dataPicker setDoneAction:^(UIDatePicker *aDatePicker) {
-                
-                cell.detailTextLabel.text = aDatePicker.date.yyyyMMddString;
-                
-                [weakSelf.view endEditing:1];
-                [weakSelf.tableView reloadData];
+            
+            [dataPicker show];
+            
+            [dataPicker setDoneAction:^(UIDatePicker *picker) {
+                cell.detailTextLabel.text = picker.date.yyyyMMddString;
+                [tableView reloadData];
             }];
             
-            [dataPicker setCancelAction:^(UIDatePicker *aDatePicker) {
-                [weakSelf.view endEditing:1];
-            }];
-            
-            UITextField *tx = [self textField];
-            if ([tx superview] == cell) {
-                
-            }else{
-                [cell addSubview:tx];
-            }
-            tx.inputView = dataPicker;
-            [tx becomeFirstResponder];
-
         }
             break;
             
         case 3:
         {
-//            [SAMPopToBottomView showWithArray:@[@"123456",@"23456534"]];
             
         }
             break;
@@ -126,7 +111,7 @@
     }
     
     
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:1];
 }
 
 
