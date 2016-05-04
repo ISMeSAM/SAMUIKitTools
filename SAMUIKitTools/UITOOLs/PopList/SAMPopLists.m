@@ -133,13 +133,6 @@ static NSString *const reuserID = @"62529bff58cd292a9e5709b4c04e3605";
         }else{
             cell.textLabel.textColor = [UIColor whiteColor];
         }
-       
-        if (self.cellIcon) {
-            cell.imageView.image = self.cellIcon;
-        }else{
-            cell.imageView.image = nil;
-        }
-        
         
     }
     

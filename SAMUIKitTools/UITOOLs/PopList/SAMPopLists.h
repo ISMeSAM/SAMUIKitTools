@@ -16,7 +16,7 @@
 @property (nonatomic , assign) CGFloat cellCornerRadius;
 @property (nonatomic , strong) UIFont *cellTextLabelFont ;
 @property (nonatomic , strong) UIColor *textLabelColor ;
-@property (nonatomic , strong) UIImage *cellIcon ;
+
 
 
 

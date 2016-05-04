@@ -51,6 +51,8 @@
         {
             SAMPopLists *popList = [SAMPopLists popListsWithArray:@[@"one",@"two",@"three",@"four"]];
             popList.cellColor = [UIColor redColor];
+            
+            
             [popList setSelectItemIndexPathAction:^(UITableViewCell *aCell, NSIndexPath *aIndexPath) {
                 
                 cell.detailTextLabel.text = aCell.textLabel.text;

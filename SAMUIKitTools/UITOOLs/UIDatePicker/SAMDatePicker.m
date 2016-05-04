@@ -75,20 +75,20 @@ static UITextField *_tmpTextField;
 - (void)setMaximumDate:(NSDate *)maximumDate
 {
     _maximumDate = maximumDate;
-    self.datePicker.maximumDate = maximumDate;
+    self.datePicker.maximumDate = _maximumDate;
 }
 
 - (void)setMinimumDate:(NSDate *)minimumDate
 {
     _minimumDate = minimumDate;
-    self.datePicker.minimumDate = minimumDate;
+    self.datePicker.minimumDate = _minimumDate;
     
 }
 
 - (void)setDatePickerBackgroundColor:(UIColor *)datePickerBackgroundColor
 {
     _datePickerBackgroundColor = datePickerBackgroundColor;
-    self.backgroundColor = datePickerBackgroundColor;
+    self.backgroundColor = _datePickerBackgroundColor;
 }
 
 
@@ -106,18 +106,18 @@ static UITextField *_tmpTextField;
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender
 {
-    [self dismiss];
     if (self.cancelAction) {
         self.cancelAction(self.datePicker);
     }
+    [self dismiss];
 }
 
 - (IBAction)doneAction:(UIBarButtonItem *)sender
 {
-    [self dismiss];
     if (self.doneAction) {
         self.doneAction(self.datePicker);
     }
+    [self dismiss];
 }
 
 
