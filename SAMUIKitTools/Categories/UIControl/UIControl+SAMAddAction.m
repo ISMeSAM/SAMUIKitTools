@@ -38,16 +38,6 @@ static const void *kUIControlEventAllEvents = &kUIControlEventAllEvents;
 
 @implementation UIControl (SAMAddAction)
 
-- (void)setAAction:(action)aAction
-{
-    objc_setAssociatedObject(self, kaAction, aAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    
-}
-
-- (action)aAction
-{
-    return objc_getAssociatedObject(self, kaAction);
-}
 
 
 - (void)addActionForEvents:(UIControlEvents)events aAction:(action)aAction

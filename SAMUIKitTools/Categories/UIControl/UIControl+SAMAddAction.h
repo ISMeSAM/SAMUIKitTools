@@ -9,8 +9,6 @@ typedef void(^action)(UIControl *sender);
 @interface UIControl (SAMAddAction)
 
 
-@property (nonatomic , copy) action aAction ;
-
 @property (nonatomic , copy) action aTouchDown ;
 @property (nonatomic , copy) action aTouchDownRepeat ;
 @property (nonatomic , copy) action aTouchDragInside ;
@@ -31,7 +29,6 @@ typedef void(^action)(UIControl *sender);
 @property (nonatomic , copy) action aApplicationReserved ;
 @property (nonatomic , copy) action aSystemReserved ;
 @property (nonatomic , copy) action aEventAllEvents ;
-
 
 
 - (void)addActionForEvents:(UIControlEvents)events aAction:(action)aAction;

@@ -34,6 +34,10 @@
 		220644A01CC4C8F600D8A402 /* SAMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 220644851CC4C8F600D8A402 /* SAMDatePicker.m */; };
 		220644A11CC4C8F600D8A402 /* SAMDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220644861CC4C8F600D8A402 /* SAMDatePicker.xib */; };
 		220644A51CC4CA0E00D8A402 /* SAMPopToStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */; };
+		220F3A9C1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */; };
+		220F3A9E1CDAFB41005BB227 /* SAMUIKitTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */; };
+		222A91031CD9BEC900E152F8 /* UIScrollView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */; };
+		222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */; };
 		225074BC1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */; };
 		225074C21CC761930031832F /* SAMMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074C11CC761930031832F /* SAMMidViewController.m */; };
 		225086EC1C8E639D00A5245C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EB1C8E639D00A5245C /* main.m */; };
@@ -45,6 +49,7 @@
 		225087051C8E639D00A5245C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087041C8E639D00A5245C /* DemoTests.m */; };
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
 		22B7AEF41CD0C45D00A37680 /* UIControl+SAMAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */; };
+		B6B7C7FEF52C687284956FED /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A5845DE384DF3C62C515A4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		20C89DC12F69271A395D2C08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2206443A1CC4C8F600D8A402 /* CALayer+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SAMExtension.h"; sourceTree = "<group>"; };
 		2206443B1CC4C8F600D8A402 /* CALayer+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SAMExtension.m"; sourceTree = "<group>"; };
 		2206443C1CC4C8F600D8A402 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
@@ -121,6 +128,13 @@
 		220644871CC4C8F600D8A402 /* UITOOLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITOOLs.h; sourceTree = "<group>"; };
 		220644A31CC4CA0E00D8A402 /* SAMPopToStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToStatusBarView.h; sourceTree = "<group>"; };
 		220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopToStatusBarView.m; sourceTree = "<group>"; };
+		220F3A9A1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SAMExtension.h"; sourceTree = "<group>"; };
+		220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SAMExtension.m"; sourceTree = "<group>"; };
+		220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMUIKitTools.bundle; sourceTree = "<group>"; };
+		222A91011CD9BEC900E152F8 /* UIScrollView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SAMExtension.h"; sourceTree = "<group>"; };
+		222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SAMExtension.m"; sourceTree = "<group>"; };
+		222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToBottomView.h; sourceTree = "<group>"; };
+		222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopToBottomView.m; sourceTree = "<group>"; };
 		225074BA1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMGestureRecognizerAction.h"; sourceTree = "<group>"; };
 		225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMGestureRecognizerAction.m"; sourceTree = "<group>"; };
 		225074C01CC761930031832F /* SAMMidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMidViewController.h; sourceTree = "<group>"; };
@@ -143,6 +157,7 @@
 		225087111C8E639D00A5245C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B7AEF21CD0C45D00A37680 /* UIControl+SAMAddAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SAMAddAction.h"; sourceTree = "<group>"; };
 		22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SAMAddAction.m"; sourceTree = "<group>"; };
+		5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B7C7FEF52C687284956FED /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +189,7 @@
 		220644371CC4C8F600D8A402 /* SAMUIKitTools */ = {
 			isa = PBXGroup;
 			children = (
+				220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */,
 				220644381CC4C8F600D8A402 /* Categories */,
 				220644791CC4C8F600D8A402 /* SAMKeys.h */,
 				2206447A1CC4C8F600D8A402 /* SAMUIKitTools.h */,
@@ -185,6 +202,8 @@
 		220644381CC4C8F600D8A402 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				220F3A931CDAD5E6005BB227 /* UINavigationBar */,
+				222A91001CD9BE9900E152F8 /* UIScrollView */,
 				22B7AEF11CD0C43000A37680 /* UIControl */,
 				220644391CC4C8F600D8A402 /* CALayer */,
 				2206443C1CC4C8F600D8A402 /* Categories.h */,
@@ -206,7 +225,6 @@
 				2206446A1CC4C8F600D8A402 /* UITabBarItem */,
 				2206446D1CC4C8F600D8A402 /* UITableViewCell */,
 				220644701CC4C8F600D8A402 /* UITextView */,
-				220644731CC4C8F600D8A402 /* UIView */,
 				220644761CC4C8F600D8A402 /* UIViewController */,
 			);
 			path = Categories;
@@ -377,6 +395,7 @@
 		220644701CC4C8F600D8A402 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
+				220644731CC4C8F600D8A402 /* UIView */,
 				220644711CC4C8F600D8A402 /* UITextView+SAMExtension.h */,
 				220644721CC4C8F600D8A402 /* UITextView+SAMExtension.m */,
 			);
@@ -391,7 +410,8 @@
 				225074BA1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.h */,
 				225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */,
 			);
-			path = UIView;
+			name = UIView;
+			path = ../UIView;
 			sourceTree = "<group>";
 		};
 		220644761CC4C8F600D8A402 /* UIViewController */ = {
@@ -406,6 +426,7 @@
 		2206447B1CC4C8F600D8A402 /* UITOOLs */ = {
 			isa = PBXGroup;
 			children = (
+				222A91051CD9CF4100E152F8 /* PopToBottomView */,
 				220644A21CC4C9DC00D8A402 /* PopOvers */,
 				2206447C1CC4C8F600D8A402 /* CheckBoxButton */,
 				2206447F1CC4C8F600D8A402 /* PopList */,
@@ -453,6 +474,33 @@
 			path = PopOvers;
 			sourceTree = "<group>";
 		};
+		220F3A931CDAD5E6005BB227 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				220F3A9A1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.h */,
+				220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		222A91001CD9BE9900E152F8 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				222A91011CD9BEC900E152F8 /* UIScrollView+SAMExtension.h */,
+				222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		222A91051CD9CF4100E152F8 /* PopToBottomView */ = {
+			isa = PBXGroup;
+			children = (
+				222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */,
+				222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */,
+			);
+			path = PopToBottomView;
+			sourceTree = "<group>";
+		};
 		225086DE1C8E639D00A5245C = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +508,8 @@
 				225087031C8E639D00A5245C /* DemoTests */,
 				2250870E1C8E639D00A5245C /* DemoUITests */,
 				225086E81C8E639D00A5245C /* Products */,
+				33BBFF2C426C072C6AD1E013 /* Pods */,
+				ED7DF86E4104EEE0CBC2189E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -527,6 +577,23 @@
 			path = UIControl;
 			sourceTree = "<group>";
 		};
+		33BBFF2C426C072C6AD1E013 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20C89DC12F69271A395D2C08 /* Pods.debug.xcconfig */,
+				00A5845DE384DF3C62C515A4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED7DF86E4104EEE0CBC2189E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -534,9 +601,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225087141C8E639D00A5245C /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				C959B79BCF2DA07B442EF45F /* Check Pods Manifest.lock */,
 				225086E31C8E639D00A5245C /* Sources */,
 				225086E41C8E639D00A5245C /* Frameworks */,
 				225086E51C8E639D00A5245C /* Resources */,
+				151734118A55295A580DF9D6 /* Embed Pods Frameworks */,
+				653634A53CAFD69560D4C90B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -631,6 +701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220F3A9E1CDAFB41005BB227 /* SAMUIKitTools.bundle in Resources */,
 				220644A11CC4C8F600D8A402 /* SAMDatePicker.xib in Resources */,
 				225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */,
 				225086F71C8E639D00A5245C /* Assets.xcassets in Resources */,
@@ -655,6 +726,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		151734118A55295A580DF9D6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653634A53CAFD69560D4C90B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C959B79BCF2DA07B442EF45F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		225086E31C8E639D00A5245C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -667,6 +786,8 @@
 				2206449D1CC4C8F600D8A402 /* CheckBox.m in Sources */,
 				220644891CC4C8F600D8A402 /* NSArray+SAMExtension.m in Sources */,
 				2206448B1CC4C8F600D8A402 /* NSDate+SAMExtension.m in Sources */,
+				222A91031CD9BEC900E152F8 /* UIScrollView+SAMExtension.m in Sources */,
+				220F3A9C1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m in Sources */,
 				225086EF1C8E639D00A5245C /* AppDelegate.m in Sources */,
 				2206448C1CC4C8F600D8A402 /* NSNumber+SAMExtension.m in Sources */,
 				220644921CC4C8F600D8A402 /* UIButton+RemoveHighlightedEffect.m in Sources */,
@@ -677,6 +798,7 @@
 				220644A51CC4CA0E00D8A402 /* SAMPopToStatusBarView.m in Sources */,
 				2206448D1CC4C8F600D8A402 /* NSObject+SAMExtension.m in Sources */,
 				220644951CC4C8F600D8A402 /* UIImage+SAMExtension.m in Sources */,
+				222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */,
 				2206449A1CC4C8F600D8A402 /* UITextView+SAMExtension.m in Sources */,
 				220644941CC4C8F600D8A402 /* UIDatePicker+SAMExtension.m in Sources */,
 				220644911CC4C8F600D8A402 /* UIBarButtonItem+SAMExtension.m in Sources */,
@@ -829,9 +951,10 @@
 		};
 		225087151C8E639D00A5245C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C89DC12F69271A395D2C08 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -843,9 +966,10 @@
 		};
 		225087161C8E639D00A5245C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A5845DE384DF3C62C515A4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

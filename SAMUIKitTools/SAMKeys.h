@@ -69,6 +69,9 @@ __weak typeof(self) weakSelf = self;
 #endif
 
 
+// 图片路径
+#define SAMUIKitToolsSrcName(file) [@"SAMUIKitTools.bundle" stringByAppendingPathComponent:file]
+#define SAMUIKitToolsFrameworkSrcName(file) [@"Frameworks/SAMUIKitTools.framework/SAMUIKitTools.bundle" stringByAppendingPathComponent:file]
 
 
 #endif /* SAMKeys_h */

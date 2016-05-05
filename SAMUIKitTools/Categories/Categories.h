@@ -28,6 +28,8 @@
 #import "UIView+SAMGestureRecognizerAction.h"
 #import "UIControl+SAMAddAction.h"
 
+#import "UIScrollView+SAMExtension.h"
+
 #import "SAMKeys.h"
 
 #endif /* Categories_h */

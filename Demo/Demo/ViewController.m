@@ -12,6 +12,19 @@
 
 @implementation ViewController
 
+static NSArray<NSString *> *_items;
+static NSArray<NSString *> *const items()
+{
+    if (!_items) {
+        _items = @[
+                   @"SAMPopToStatusBarView",
+                   @"SAMPopLists",
+                   @"SAMDatePicker",
+                   @"SAMPopToBottomView"
+                   ];
+    }
+    return _items;
+}
 
 - (void)viewDidLoad
 {
@@ -23,11 +36,18 @@
     
 }
 
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return items().count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ViewControllerCell"];
     
- 
+    cell.textLabel.text = items()[indexPath.row];
+    
+    return cell;
 }
 
 
@@ -50,7 +70,7 @@
         case 1:
         {
             SAMPopLists *popList = [SAMPopLists popListsWithArray:@[@"one",@"two",@"three",@"four"]];
-            popList.cellColor = [UIColor redColor];
+            popList.cellColor = [UIColor raspberryColor];
             
             
             [popList setSelectItemIndexPathAction:^(UITableViewCell *aCell, NSIndexPath *aIndexPath) {
@@ -78,6 +98,10 @@
             
         case 3:
         {
+            
+            [[SAMPopToBottomView popWithArray:@[@"发送给朋友",@"保存图片",@"收藏",@"投诉"]] setSelectedItem:^(UIButton *aButton,NSInteger sender) {
+                NSLog(@"title==>%@---index==>%ld",aButton.currentTitle,sender);
+            }];
             
         }
             break;
