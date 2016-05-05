@@ -60,7 +60,7 @@ static double _duration = 0.25;
     self = [super initWithFrame:frame];
     if (self) {
         _contentView = [[UIButton alloc] init];
-        _contentView.backgroundColor = [UIColor darkGrayColor];
+        _contentView.backgroundColor = [UIColor clearColor];
         _contentView.alpha = 1.0;
         _contentView.width = self.width;
         _contentView.x = 0;
@@ -77,17 +77,17 @@ static double _duration = 0.25;
         return nil;
     }
     
-     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     
     SAMPopToBottomView *pop = [[SAMPopToBottomView alloc] initWithFrame:window.bounds];
-    pop.backgroundColor = [UIColor lightGrayColor];
-    pop.alpha = 0;
+    pop.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+
     pop.items = items;
     
     [window addSubview:pop];
 
     [UIView animateWithDuration:_duration animations:^{
-        pop.alpha = 1.0;
+         pop.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
     }];
     
     return pop;
@@ -138,10 +138,6 @@ static double _duration = 0.25;
     [UIView animateWithDuration:_duration animations:^{
         self.contentView.y = self.height - self.contentView.height;
     }];
-    
-    UIImage *backgroundColorImg = [[UIImage imageScreenshot] applyTintEffectWithColor:[UIColor darkGrayColor]];
-
-    self.backgroundColor = [UIColor colorWithPatternImage:backgroundColorImg];
     
 }
 

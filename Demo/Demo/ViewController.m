@@ -12,27 +12,12 @@
 
 @implementation ViewController
 
-static NSArray<NSString *> *_items;
-static NSArray<NSString *> *const items()
-{
-    if (!_items) {
-        _items = @[
-                   @"SAMPopToStatusBarView",
-                   @"SAMPopLists",
-                   @"SAMDatePicker",
-                   @"SAMPopToBottomView"
-                   ];
-    }
-    return _items;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.title = @"PopOvers";
 
- 
     
 }
 
@@ -53,6 +38,8 @@ static NSArray<NSString *> *const items()
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:1];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     __weak typeof(self) weakSelf = self;
@@ -109,6 +96,7 @@ static NSArray<NSString *> *const items()
         case 4:
         {
             
+            
         }
             break;
             
@@ -137,21 +125,24 @@ static NSArray<NSString *> *const items()
     }
     
     
-    [tableView deselectRowAtIndexPath:indexPath animated:1];
+   
 }
 
 
 
-static UITextField *_aTextField;
-
-- (UITextField *)textField
+static NSArray<NSString *> *_items;
+static NSArray<NSString *> *const items()
 {
-    if (!_aTextField)
-    {
-        _aTextField = [UITextField new];
-        
+    if (!_items) {
+        _items = @[
+                   @"SAMPopToStatusBarView",
+                   @"SAMPopLists",
+                   @"SAMDatePicker",
+                   @"SAMPopToBottomView",
+                   @"UIActivityViewController"
+                   ];
     }
-    return _aTextField;
+    return _items;
 }
 
 

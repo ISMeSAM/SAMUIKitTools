@@ -44,7 +44,10 @@
     
     UIImage *image = [UIImage imageScreenshot];
     
-    switch (type) {
+    switch (type)
+    {
+        case UIImageEffectType_none:{}break;
+            
         case UIImageEffectTypeDarkEffect:
             image = [image applyDarkEffect];
             break;
@@ -52,9 +55,11 @@
         case UIImageEffectTypeLightEffect:
             image = [image applyLightEffect];
             break;
+            
         case UIImageEffectTypeExtraLightEffect:
             image = [image applyExtraLightEffect];
             break;
+            
         default:
             break;
     }
