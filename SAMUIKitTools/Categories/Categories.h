@@ -16,6 +16,7 @@
 #import "UINavigationController+SAMExtension.h"
 #import "UIViewController+SAMExtension.h"
 #import "UIView+SAMExtension.h"
+#import "UIView+SAMProgressTool.h"
 #import "NSNumber+SAMExtension.h"
 #import "UITableViewCell+SAMExtension.h"
 #import "CALayer+SAMExtension.h"
@@ -27,7 +28,7 @@
 #import "UIAlertController+SAMExtension.h"
 #import "UIView+SAMGestureRecognizerAction.h"
 #import "UIControl+SAMAddAction.h"
-
+#import "UINavigationBar+SAMExtension.h"
 #import "UIScrollView+SAMExtension.h"
 
 #import "SAMKeys.h"

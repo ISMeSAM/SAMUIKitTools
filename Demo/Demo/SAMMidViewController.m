@@ -2,11 +2,9 @@
 //  SAMMidViewController.m
 
 #import "SAMMidViewController.h"
-#import "UIView+SAMGestureRecognizerAction.h"
-#import "SAMPopToStatusBarView.h"
-#import "UIView+SAMExtension.h"
 
-#import "UIControl+SAMAddAction.h"
+#import "SAMUIKitTools.h"
+
 
 
 @interface SAMMidViewController()
@@ -128,7 +126,6 @@
     [button addActionForEvents:UIControlEventTouchCancel aAction:^(UIControl *sender) {
         NSLog(@"UIControlEventTouchCancel");
     }];
-    
     
     
 }

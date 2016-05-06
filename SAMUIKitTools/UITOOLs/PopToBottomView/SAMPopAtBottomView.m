@@ -1,10 +1,6 @@
 //
 //  SAMPopAtBottomView.m
-//  Demo
-//
-//  Created by samiMac on 16/5/5.
-//  Copyright © 2016年 wydatas. All rights reserved.
-//
+
 
 #import "SAMPopAtBottomView.h"
 

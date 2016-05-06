@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--分类-->
@@ -44,21 +45,31 @@
         <!--Root View Controller-->
         <scene sceneID="G7k-Fy-pGr">
             <objects>
-                <tableViewController id="OIW-zU-lMt" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SAMOtherViewController" id="OIW-zU-lMt" customClass="SAMOtherViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="drF-90-NlY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XMQ-oi-wB0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SAMOtherViewControllerCell" textLabel="we0-34-nqB" style="IBUITableViewCellStyleDefault" id="XMQ-oi-wB0">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XMQ-oi-wB0" id="MMR-3o-4AK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ProgressView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="we0-34-nqB">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="OIW-zU-lMt" id="0jW-ce-hnV"/>
                             <outlet property="delegate" destination="OIW-zU-lMt" id="vLa-jN-QEJ"/>
@@ -70,11 +81,56 @@
             </objects>
             <point key="canvasLocation" x="2091" y="1153"/>
         </scene>
+        <!--Progress View Controller-->
+        <scene sceneID="5dq-19-wOq">
+            <objects>
+                <viewController storyboardIdentifier="SAMProgressViewController" hidesBottomBarWhenPushed="YES" id="rpw-yB-o9J" customClass="SAMProgressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFS-ze-uok"/>
+                        <viewControllerLayoutGuide type="bottom" id="jdg-Nu-spp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eg8-5H-L5H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-8E-RJw">
+                                <rect key="frame" x="14" y="156" width="347" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N6Z-wM-1bW"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYp-fo-giT">
+                                <rect key="frame" x="16" y="220" width="93" height="30"/>
+                                <state key="normal" title="startProgress"/>
+                                <connections>
+                                    <action selector="startProgress" destination="rpw-yB-o9J" eventType="touchUpInside" id="B3s-uk-4s7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qYp-fo-giT" firstAttribute="leading" secondItem="VEE-8E-RJw" secondAttribute="leading" id="74K-ZR-jyQ"/>
+                            <constraint firstItem="VEE-8E-RJw" firstAttribute="leading" secondItem="eg8-5H-L5H" secondAttribute="leadingMargin" id="P4Y-ZI-rec"/>
+                            <constraint firstItem="VEE-8E-RJw" firstAttribute="top" secondItem="oFS-ze-uok" secondAttribute="bottom" constant="136" id="SZC-DX-Ov9"/>
+                            <constraint firstItem="VEE-8E-RJw" firstAttribute="trailing" secondItem="eg8-5H-L5H" secondAttribute="trailingMargin" id="VYB-SV-DBw"/>
+                            <constraint firstItem="qYp-fo-giT" firstAttribute="top" secondItem="VEE-8E-RJw" secondAttribute="bottom" constant="34" id="efG-uu-Ac1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGy-Qa-HB8"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="slider" destination="VEE-8E-RJw" id="Ymv-yR-as9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jow-hC-Lgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.5" y="1142.5"/>
+        </scene>
         <!--附近-->
         <scene sceneID="WtI-Na-ReY">
             <objects>
                 <navigationController title="附近" id="e1v-fZ-L6C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="RCQ-MG-hsP"/>
+                    <tabBarItem key="tabBarItem" title="Other" id="RCQ-MG-hsP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6DR-5p-qc3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

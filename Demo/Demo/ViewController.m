@@ -95,6 +95,7 @@
 
             [[SAMPopToBottomView popWithArray:@[@"发送给朋友",@"保存图片",@"收藏",@"投诉"]] setSelectedItem:^(UIButton *aButton,NSInteger sender) {
                 NSLog(@"title==>%@---index==>%ld",aButton.currentTitle,sender);
+                [SAMPopToStatusBarView showStatusBarViewWithMessage:[NSString stringWithFormat:@"%@成功!",aButton.currentTitle]];
             }];
             
         }
@@ -111,7 +112,8 @@
             SAMPopAtBottomViewItem *item2 = [SAMPopAtBottomViewItem new];
             item2.title = @"helloworld";
             item2.image = @"iconImage";
-            SAMPopAtBottomView *pop = [SAMPopAtBottomView bottomViewWithItems:@[item,item2]];
+            
+            SAMPopAtBottomView *pop = [SAMPopAtBottomView bottomViewWithItems:@[item,item2,item,item2,item,item2,item,item2]];
             [pop show];
             
             [pop setSelectedItem:^(NSIndexPath *aIndexPath) {
@@ -122,7 +124,7 @@
             
         case 5:
         {
-
+            
         }
             break;
             

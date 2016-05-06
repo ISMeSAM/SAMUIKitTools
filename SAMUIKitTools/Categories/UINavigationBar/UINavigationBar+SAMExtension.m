@@ -1,10 +1,6 @@
 //
 //  UINavigationBar+SAMExtension.m
-//  Demo
-//
-//  Created by samiMac on 16/5/5.
-//  Copyright © 2016年 wydatas. All rights reserved.
-//
+
 
 #import "UINavigationBar+SAMExtension.h"
 #import <objc/runtime.h>

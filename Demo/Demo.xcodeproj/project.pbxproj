@@ -49,6 +49,8 @@
 		225086FA1C8E639D00A5245C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225086F81C8E639D00A5245C /* LaunchScreen.storyboard */; };
 		225087051C8E639D00A5245C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225087041C8E639D00A5245C /* DemoTests.m */; };
 		225087101C8E639D00A5245C /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250870F1C8E639D00A5245C /* DemoUITests.m */; };
+		228515761CDC3E8400F34A63 /* UIView+SAMProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 228515751CDC3E8400F34A63 /* UIView+SAMProgressTool.m */; };
+		228515791CDC497E00F34A63 /* SAMOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228515781CDC497E00F34A63 /* SAMOtherViewController.m */; };
 		22B7AEF41CD0C45D00A37680 /* UIControl+SAMAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */; };
 		B6B7C7FEF52C687284956FED /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +160,10 @@
 		2250870B1C8E639D00A5245C /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250870F1C8E639D00A5245C /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		225087111C8E639D00A5245C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228515741CDC3E8400F34A63 /* UIView+SAMProgressTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMProgressTool.h"; sourceTree = "<group>"; };
+		228515751CDC3E8400F34A63 /* UIView+SAMProgressTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMProgressTool.m"; sourceTree = "<group>"; };
+		228515771CDC497E00F34A63 /* SAMOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMOtherViewController.h; sourceTree = "<group>"; };
+		228515781CDC497E00F34A63 /* SAMOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMOtherViewController.m; sourceTree = "<group>"; };
 		22B7AEF21CD0C45D00A37680 /* UIControl+SAMAddAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SAMAddAction.h"; sourceTree = "<group>"; };
 		22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SAMAddAction.m"; sourceTree = "<group>"; };
 		5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +211,7 @@
 		220644381CC4C8F600D8A402 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				220644731CC4C8F600D8A402 /* UIView */,
 				220F3A931CDAD5E6005BB227 /* UINavigationBar */,
 				222A91001CD9BE9900E152F8 /* UIScrollView */,
 				22B7AEF11CD0C43000A37680 /* UIControl */,
@@ -398,7 +405,6 @@
 		220644701CC4C8F600D8A402 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				220644731CC4C8F600D8A402 /* UIView */,
 				220644711CC4C8F600D8A402 /* UITextView+SAMExtension.h */,
 				220644721CC4C8F600D8A402 /* UITextView+SAMExtension.m */,
 			);
@@ -412,9 +418,10 @@
 				220644751CC4C8F600D8A402 /* UIView+SAMExtension.m */,
 				225074BA1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.h */,
 				225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */,
+				228515741CDC3E8400F34A63 /* UIView+SAMProgressTool.h */,
+				228515751CDC3E8400F34A63 /* UIView+SAMProgressTool.m */,
 			);
-			name = UIView;
-			path = ../UIView;
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		220644761CC4C8F600D8A402 /* UIViewController */ = {
@@ -536,6 +543,8 @@
 				225086EE1C8E639D00A5245C /* AppDelegate.m */,
 				225086F01C8E639D00A5245C /* ViewController.h */,
 				225086F11C8E639D00A5245C /* ViewController.m */,
+				228515771CDC497E00F34A63 /* SAMOtherViewController.h */,
+				228515781CDC497E00F34A63 /* SAMOtherViewController.m */,
 				225074C01CC761930031832F /* SAMMidViewController.h */,
 				225074C11CC761930031832F /* SAMMidViewController.m */,
 				225086F31C8E639D00A5245C /* Main.storyboard */,
@@ -807,6 +816,7 @@
 				222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */,
 				2206449A1CC4C8F600D8A402 /* UITextView+SAMExtension.m in Sources */,
 				220644941CC4C8F600D8A402 /* UIDatePicker+SAMExtension.m in Sources */,
+				228515761CDC3E8400F34A63 /* UIView+SAMProgressTool.m in Sources */,
 				220644911CC4C8F600D8A402 /* UIBarButtonItem+SAMExtension.m in Sources */,
 				220644881CC4C8F600D8A402 /* CALayer+SAMExtension.m in Sources */,
 				2206448E1CC4C8F600D8A402 /* NSString+SAMExtension.m in Sources */,
@@ -817,6 +827,7 @@
 				225074BC1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m in Sources */,
 				225074C21CC761930031832F /* SAMMidViewController.m in Sources */,
 				2206449E1CC4C8F600D8A402 /* SAMPopLists.m in Sources */,
+				228515791CDC497E00F34A63 /* SAMOtherViewController.m in Sources */,
 				220644961CC4C8F600D8A402 /* UILabel+SAMExtension.m in Sources */,
 				220644931CC4C8F600D8A402 /* UIColor+SAMExtension.m in Sources */,
 			);
@@ -960,7 +971,7 @@
 			baseConfigurationReference = 20C89DC12F69271A395D2C08 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -975,7 +986,7 @@
 			baseConfigurationReference = 00A5845DE384DF3C62C515A4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
