@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface SAMProgressViewControllerSubController : UIViewController
+
+@end
 @interface SAMProgressViewController : UIViewController
 
 @end

@@ -3,9 +3,9 @@
 
 
 #import "AppDelegate.h"
-//#import "SAMKeys.h"
 #import "SAMUIKitTools.h"
 #import "AFNetworking.h"
+
 @interface AppDelegate ()
 
 @end
@@ -15,19 +15,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-//    NSLog(@"%@",launchOptions);
-    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", nil];
-//    
-//    [manager POST:@"http://192.168.11.42:8082/listUsers/" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        
-//        NSLog(@"json--->%@",responseObject);
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"%@",error);
-//    }];
     
     return YES;
 }
