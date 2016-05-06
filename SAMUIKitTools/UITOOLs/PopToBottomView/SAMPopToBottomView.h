@@ -16,9 +16,22 @@ typedef void(^SelectedItem)(NSInteger sender);
 @property (nonatomic , copy) void(^selectedItem)(UIButton *aButton,NSInteger sender);
 
 
-+ (instancetype)popWithArray:(NSArray<NSString *> *)items;
-
-
++ (instancetype)popWithArray:(NSArray<__kindof NSString *> *)items;
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

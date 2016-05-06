@@ -36,6 +36,7 @@
 		220644A51CC4CA0E00D8A402 /* SAMPopToStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220644A41CC4CA0E00D8A402 /* SAMPopToStatusBarView.m */; };
 		220F3A9C1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */; };
 		220F3A9E1CDAFB41005BB227 /* SAMUIKitTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */; };
+		220F3AA11CDB2D0B005BB227 /* SAMPopAtBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */; };
 		222A91031CD9BEC900E152F8 /* UIScrollView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */; };
 		222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */; };
 		225074BC1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */; };
@@ -131,6 +132,8 @@
 		220F3A9A1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SAMExtension.h"; sourceTree = "<group>"; };
 		220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SAMExtension.m"; sourceTree = "<group>"; };
 		220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMUIKitTools.bundle; sourceTree = "<group>"; };
+		220F3A9F1CDB2D0B005BB227 /* SAMPopAtBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopAtBottomView.h; sourceTree = "<group>"; };
+		220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopAtBottomView.m; sourceTree = "<group>"; };
 		222A91011CD9BEC900E152F8 /* UIScrollView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SAMExtension.h"; sourceTree = "<group>"; };
 		222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SAMExtension.m"; sourceTree = "<group>"; };
 		222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToBottomView.h; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 			children = (
 				222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */,
 				222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */,
+				220F3A9F1CDB2D0B005BB227 /* SAMPopAtBottomView.h */,
+				220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */,
 			);
 			path = PopToBottomView;
 			sourceTree = "<group>";
@@ -793,6 +798,7 @@
 				220644921CC4C8F600D8A402 /* UIButton+RemoveHighlightedEffect.m in Sources */,
 				2206449B1CC4C8F600D8A402 /* UIView+SAMExtension.m in Sources */,
 				220644971CC4C8F600D8A402 /* UINavigationController+SAMExtension.m in Sources */,
+				220F3AA11CDB2D0B005BB227 /* SAMPopAtBottomView.m in Sources */,
 				225086EC1C8E639D00A5245C /* main.m in Sources */,
 				22B7AEF41CD0C45D00A37680 /* UIControl+SAMAddAction.m in Sources */,
 				220644A51CC4CA0E00D8A402 /* SAMPopToStatusBarView.m in Sources */,

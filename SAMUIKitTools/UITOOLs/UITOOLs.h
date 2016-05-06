@@ -9,4 +9,5 @@
 #import "SAMDatePicker.h"
 #import "SAMPopToStatusBarView.h"
 #import "SAMPopToBottomView.h"
+#import "SAMPopAtBottomView.h"
 #endif /* UITOOLs_h */
