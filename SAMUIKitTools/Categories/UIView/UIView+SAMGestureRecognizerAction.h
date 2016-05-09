@@ -33,38 +33,5 @@ typedef void(^SAMGestureRecognizer)(UIGestureRecognizer *_Nonnull aGestureRecogn
 
 
 
-/**
- *  手势类型
- */
-typedef NS_ENUM(NSUInteger, SAMGestureRecognizerActionType) {
-    /**
-     *  任意次数拍击
-     */
-    SAMGestureRecognizerActionType_tap,
-    /**
-     *  长按
-     */
-    SAMGestureRecognizerActionType_longPress,
-    /**
-     *  轻扫
-     */
-    SAMGestureRecognizerActionType_swipe,
-    /**
-     *  拖动
-     */
-    SAMGestureRecognizerActionType_pan,
-    /**
-     *  缩放
-     */
-    SAMGestureRecognizerActionType_pinch,
-    /**
-     *  旋转
-     */
-    SAMGestureRecognizerActionType_rotation
-};
-
-
-
-
 
 

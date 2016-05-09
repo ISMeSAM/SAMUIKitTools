@@ -132,16 +132,12 @@ lab: ;
     }
     
     __weak typeof(self) weakSelf = self;
-    
+    __strong typeof(weakSelf) strongSelf = weakSelf;
     [UIView animateWithDuration:0.25 animations:^{
-        
-        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         strongSelf.samProgressView.alpha = 0;
         
     } completion:^(BOOL finished) {
-        
-        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         if (finished) {
             [strongSelf.samProgressView removeFromSuperview];
