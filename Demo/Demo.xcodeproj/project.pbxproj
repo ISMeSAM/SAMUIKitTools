@@ -39,6 +39,7 @@
 		220F3AA11CDB2D0B005BB227 /* SAMPopAtBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */; };
 		222A91031CD9BEC900E152F8 /* UIScrollView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */; };
 		222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */; };
+		223B010C1CE06AA8001A4327 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B010B1CE06AA8001A4327 /* QuartzCore.framework */; };
 		225074BC1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */; };
 		225074C21CC761930031832F /* SAMMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225074C11CC761930031832F /* SAMMidViewController.m */; };
 		225086EC1C8E639D00A5245C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225086EB1C8E639D00A5245C /* main.m */; };
@@ -140,6 +141,7 @@
 		222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SAMExtension.m"; sourceTree = "<group>"; };
 		222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToBottomView.h; sourceTree = "<group>"; };
 		222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopToBottomView.m; sourceTree = "<group>"; };
+		223B010B1CE06AA8001A4327 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		225074BA1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMGestureRecognizerAction.h"; sourceTree = "<group>"; };
 		225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMGestureRecognizerAction.m"; sourceTree = "<group>"; };
 		225074C01CC761930031832F /* SAMMidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMMidViewController.h; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B010C1CE06AA8001A4327 /* QuartzCore.framework in Frameworks */,
 				B6B7C7FEF52C687284956FED /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +606,7 @@
 		ED7DF86E4104EEE0CBC2189E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				223B010B1CE06AA8001A4327 /* QuartzCore.framework */,
 				5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */,
 			);
 			name = Frameworks;
