@@ -125,17 +125,24 @@
         case 5:
         {
 #pragma mark - SAMAlertView
-
-            SAMAlertView *alert = [SAMAlertView showWithItems:@[@"one",@"two"] withMessage:@"我是message" title:@"我是title"];
-            alert.touchBackgroundViewCanRemove = 1;
-            [alert setDidSelectedItem:^(UIButton *sender, NSInteger index) {
-                NSLog(@"%@---%ld",sender.currentTitle,index);
+            SAMAlertViewItem *item1 = [[SAMAlertViewItem alloc] initWithTitle:@"我是一个蓝色的按钮" titleColor:[UIColor blueColor]];
+            SAMAlertViewItem *item2 = [[SAMAlertViewItem alloc] initWithTitle:@"我是一个红色的按钮" titleColor:[UIColor redColor]];
+            SAMAlertView *alert = [SAMAlertView showWithItems:@[item1,item2] withMessage:@"我是message" title:@"我是title"];
+          
+            alert.touchBackgroundViewCanRemove = YES;
+            
+            alert.messageColor = [UIColor redColor];
+            
+            [alert setDidSelectedItem:^(SAMAlertViewItem * _Nonnull aItem, NSInteger clickIndex) {
+                NSLog(@"%@--%ld",aItem.title,clickIndex);
             }];
         }
             break;
             
         case 6:
         {
+
+
             
             
         }

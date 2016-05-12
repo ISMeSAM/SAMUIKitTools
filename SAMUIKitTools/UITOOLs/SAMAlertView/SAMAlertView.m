@@ -7,6 +7,22 @@
 #import "UIView+SAMGestureRecognizerAction.h"
 #import "SAMKeys.h"
 
+@implementation SAMAlertViewItem
+
+- (instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor
+{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    self.title = title;
+    self.titleColor = titleColor;
+    
+    return self;
+}
+@end
+
 @interface SAMAlertView ()
 
 @property (nonatomic , strong) UIButton *contentView ;
@@ -14,7 +30,7 @@
 @property (nonatomic , strong) UIButton *titleButton ;
 
 
-@property (nonatomic , strong) NSArray<NSString *> *items ;
+@property (nonatomic , strong) NSArray<SAMAlertViewItem *> *items ;
 @property (nonatomic , copy) NSString *message ;
 @property (nonatomic , copy) NSString *title ;
 
@@ -27,6 +43,47 @@ static double _duration = 0.25;
 static double _itemHeight = 44.f;
 
 static double _messageHeight = 55.f;
+
+
++ (instancetype)showLeftItem:(SAMAlertViewItem *)leftItem
+                andRightItem:(SAMAlertViewItem *)rightItem
+                 withMessage:(NSString *)message
+                       title:(NSString *)title
+{
+    return [self showWithItems:@[leftItem,rightItem]
+                   withMessage:message
+                         title:title];
+}
+
+
++ (instancetype)showWithItems:(NSArray<__kindof SAMAlertViewItem *> *)items
+                  withMessage:(NSString *)message
+                        title:(NSString *)title
+{
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    SAMAlertView *alertView = [[SAMAlertView alloc] initWithFrame:window.bounds];
+    alertView.items = items;
+    alertView.title = title;
+    alertView.message = message;
+    [window addSubview:alertView];
+    alertView.contentView.alpha = 0;
+    [UIView animateWithDuration:_duration animations:^{
+        alertView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+        
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [UIView animateWithDuration:_duration delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:5.0 options:0 animations:^{
+                
+                alertView.contentView.center_y = window.center_y;
+                alertView.contentView.alpha = 1.f;
+            } completion:nil];
+        }
+    }];
+    
+    return alertView;
+}
+
+
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -61,6 +118,7 @@ static double _messageHeight = 55.f;
     _messageLabel.font = [UIFont systemFontOfSize:14.f];
     _messageLabel.textAlignment = NSTextAlignmentCenter;
     _messageLabel.backgroundColor = [UIColor whiteColor];
+    _messageLabel.textColor = [UIColor darkGrayColor];
     [_contentView addSubview:_messageLabel];
     
    
@@ -105,7 +163,14 @@ static double _messageHeight = 55.f;
     return lineView;
 }
 
-- (void)setItems:(NSArray<NSString *> *)items
+
+
+
+
+#pragma mark - setter
+
+
+- (void)setItems:(NSArray<SAMAlertViewItem *> *)items
 {
     _items = items;
     
@@ -117,7 +182,7 @@ static double _messageHeight = 55.f;
     
     for (NSInteger i = 0 ; i < count  ; ++i) {
         
-        NSString *title = items[i];
+        NSString *title = items[i].title;
         UIButton *button = [[UIButton alloc] init];
         NSString *imgStr = SAMUIKitToolsSrcName(@"background_highlighted");
         if (imgStr.length == 0) {
@@ -128,6 +193,12 @@ static double _messageHeight = 55.f;
         [button setBackgroundImage:image forState:UIControlStateHighlighted];
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        if (items[i].titleColor) {
+            [button setTitleColor:items[i].titleColor forState:UIControlStateNormal];
+        }
+        
+        button.titleLabel.font = [UIFont systemFontOfSize:15.f];
         
         button.backgroundColor = [UIColor whiteColor];
         button.tag = i;
@@ -145,7 +216,7 @@ static double _messageHeight = 55.f;
 - (void)itemButtonClick:(UIButton *)sender
 {
     if (self.didSelectedItem) {
-        self.didSelectedItem(sender,sender.tag);
+        self.didSelectedItem(self.items[sender.tag],sender.tag);
     }
     [self dismiss];
 }
@@ -153,54 +224,22 @@ static double _messageHeight = 55.f;
 - (void)setTitle:(NSString *)title
 {
     _title = title;
-    
+  
     [_titleButton setTitle:_title forState:UIControlStateNormal];
 }
 - (void)setMessage:(NSString *)message
 {
     _message = message;
+    
     _messageLabel.text = _message;
 }
 
-
-+ (instancetype)showLeftItem:(NSString *)leftItem
-                andRightItem:(NSString *)rightItem
-                 withMessage:(NSString *)message
-                       title:(NSString *)title
+- (void)setMessageColor:(UIColor *)messageColor
 {
-    return [self showWithItems:@[leftItem,rightItem]
-                   withMessage:message
-                         title:title];
-}
-
-
-+ (instancetype)showWithItems:(NSArray<__kindof NSString *> *)items
-                  withMessage:(NSString *)message
-                        title:(NSString *)title
-{
-    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-    SAMAlertView *alertView = [[SAMAlertView alloc] initWithFrame:window.bounds];
-    alertView.items = items;
-    alertView.title = title;
-    alertView.message = message;
-    [window addSubview:alertView];
-    alertView.contentView.alpha = 0;
-    [UIView animateWithDuration:_duration animations:^{
-        alertView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
-        
-    } completion:^(BOOL finished) {
-        if (finished) {
-            [UIView animateWithDuration:_duration delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:5.0 options:0 animations:^{
-                
-                alertView.contentView.center_y = window.center_y;
-                alertView.contentView.alpha = 1.f;
-            } completion:nil];
-        }
-    }];
+    _messageColor = messageColor;
     
-    return alertView;
+    self.messageLabel.textColor = _messageColor;
 }
-
 
 
 

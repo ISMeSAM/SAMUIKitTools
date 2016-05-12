@@ -4,6 +4,15 @@
 
 #import <UIKit/UIKit.h>
 
+@interface SAMAlertViewItem : NSObject
+
+@property (nonatomic , copy) NSString *title ;
+@property (nonatomic , strong) UIColor *titleColor ;
+
+- (instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor;
+
+@end
+
 @interface SAMAlertView : UIView
 
 /**
@@ -14,10 +23,10 @@
  *  @param message
  *  @param title
  */
-+ (instancetype)showLeftItem:(NSString *)leftItem
-                andRightItem:(NSString *)rightItem
-                 withMessage:(NSString *)message
-                       title:(NSString *)title;
++ (nullable instancetype)showLeftItem:(SAMAlertViewItem * __nonnull)leftItem
+                         andRightItem:(SAMAlertViewItem * __nonnull)rightItem
+                          withMessage:(NSString * __nonnull)message
+                                title:(NSString * __nonnull)title;
 
 
 /**
@@ -27,14 +36,16 @@
  *  @param message message
  *  @param title  title
  */
-+ (instancetype)showWithItems:(NSArray<__kindof NSString *> *)items
-                  withMessage:(NSString *)message
-                        title:(NSString *)title;
++ (nullable instancetype)showWithItems:(NSArray<__kindof SAMAlertViewItem *> * __nonnull)items
+                           withMessage:(NSString * __nonnull )message
+                                 title:(NSString * __nonnull )title;
 
 
-@property (nonatomic , copy) void(^didSelectedItem)(UIButton *sender,NSInteger aButtonIndex);
+@property (nonatomic , copy, nullable) void(^didSelectedItem)(SAMAlertViewItem *__nonnull sender,NSInteger aButtonIndex);
 
 @property (nonatomic , assign) BOOL touchBackgroundViewCanRemove;
 
+
+@property (nonatomic , strong, nullable) UIColor *messageColor ;
 
 @end
