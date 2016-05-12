@@ -10,4 +10,5 @@
 #import "SAMPopToStatusBarView.h"
 #import "SAMPopToBottomView.h"
 #import "SAMPopAtBottomView.h"
+#import "SAMAlertView.h"
 #endif /* UITOOLs_h */

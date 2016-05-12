@@ -124,7 +124,13 @@
             
         case 5:
         {
-            
+#pragma mark - SAMAlertView
+
+            SAMAlertView *alert = [SAMAlertView showWithItems:@[@"one",@"two"] withMessage:@"我是message" title:@"我是title"];
+            alert.touchBackgroundViewCanRemove = 1;
+            [alert setDidSelectedItem:^(UIButton *sender, NSInteger index) {
+                NSLog(@"%@---%ld",sender.currentTitle,index);
+            }];
         }
             break;
             
@@ -161,7 +167,8 @@ static NSArray<NSString *> *const items()
                    @"SAMPopLists",
                    @"SAMDatePicker",
                    @"SAMPopToBottomView",
-                   @"SAMPopAtBottomView"
+                   @"SAMPopAtBottomView",
+                   @"SAMAlertView"
                    ];
     }
     return _items;

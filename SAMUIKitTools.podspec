@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   s.resources       = "SAMUIKitTools/SAMUIKitTools.bundle"
   
   s.frameworks      = "QuartzCore","UIKit"
+
+  s.dependency 'pop', '~> 1.0'
   
   s.requires_arc    = true
 
