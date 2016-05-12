@@ -1,10 +1,6 @@
 //
 //  SAMAlertView.m
-//  Demo
-//
-//  Created by samiMac on 16/5/11.
-//  Copyright © 2016年 wydatas. All rights reserved.
-//
+
 
 #import "SAMAlertView.h"
 #import "UIView+SAMExtension.h"
