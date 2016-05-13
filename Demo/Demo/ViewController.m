@@ -5,8 +5,13 @@
 #import "ViewController.h"
 #import "SAMUIKitTools.h"
 
-@interface ViewController ()
+#import "SAMSlideBar.h"
 
+
+@interface ViewController ()
+<
+    SAMSlideBarCompontDataSource
+>
 
 @end
 
@@ -141,16 +146,21 @@
             
         case 6:
         {
-
-
+#pragma mark - SAMSlideBar left
             
+            // left
+            [SAMSlideBar showWithTargetViewController:self];
             
+
         }
             break;
             
         case 7:
         {
+#pragma mark - SAMSlideBar right
+            // right
             
+            [SAMSlideBar showWithTargetViewController:self andType:SAMSlideBarShowDirectionType_right];
             
         }
             break;
@@ -159,8 +169,19 @@
             break;
     }
     
-    
-   
+}
+
+
+
+
+#pragma mark - SAMSlideBarCompontDataSource
+
+
+- (UIView *)sideBarInSlideBar:(SAMSlideBar *)slideBar
+{
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor whiteColor];
+    return view;
 }
 
 
@@ -175,7 +196,9 @@ static NSArray<NSString *> *const items()
                    @"SAMDatePicker",
                    @"SAMPopToBottomView",
                    @"SAMPopAtBottomView",
-                   @"SAMAlertView"
+                   @"SAMAlertView",
+                   @"SAMSlideBar_left",
+                   @"SAMSlideBar_right"
                    ];
     }
     return _items;

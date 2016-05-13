@@ -54,6 +54,7 @@
 		228515791CDC497E00F34A63 /* SAMOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228515781CDC497E00F34A63 /* SAMOtherViewController.m */; };
 		22B7AEF41CD0C45D00A37680 /* UIControl+SAMAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */; };
 		22BE26CD1CE336E300DA5F5C /* SAMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BE26CC1CE336E300DA5F5C /* SAMAlertView.m */; };
+		22BE26D51CE5B57A00DA5F5C /* SAMSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BE26D41CE5B57A00DA5F5C /* SAMSlideBar.m */; };
 		B6B7C7FEF52C687284956FED /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +172,8 @@
 		22B7AEF31CD0C45D00A37680 /* UIControl+SAMAddAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SAMAddAction.m"; sourceTree = "<group>"; };
 		22BE26CB1CE336E300DA5F5C /* SAMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMAlertView.h; sourceTree = "<group>"; };
 		22BE26CC1CE336E300DA5F5C /* SAMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMAlertView.m; sourceTree = "<group>"; };
+		22BE26D31CE5B57A00DA5F5C /* SAMSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSlideBar.h; sourceTree = "<group>"; };
+		22BE26D41CE5B57A00DA5F5C /* SAMSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSlideBar.m; sourceTree = "<group>"; };
 		5796AFF0A5AF3A1C5CA7ED66 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -442,6 +445,7 @@
 		2206447B1CC4C8F600D8A402 /* UITOOLs */ = {
 			isa = PBXGroup;
 			children = (
+				22BE26D21CE5B56300DA5F5C /* SAMSlideBar */,
 				22BE26CA1CE336CE00DA5F5C /* SAMAlertView */,
 				222A91051CD9CF4100E152F8 /* PopToBottomView */,
 				220644A21CC4C9DC00D8A402 /* PopOvers */,
@@ -605,6 +609,15 @@
 				22BE26CC1CE336E300DA5F5C /* SAMAlertView.m */,
 			);
 			path = SAMAlertView;
+			sourceTree = "<group>";
+		};
+		22BE26D21CE5B56300DA5F5C /* SAMSlideBar */ = {
+			isa = PBXGroup;
+			children = (
+				22BE26D31CE5B57A00DA5F5C /* SAMSlideBar.h */,
+				22BE26D41CE5B57A00DA5F5C /* SAMSlideBar.m */,
+			);
+			path = SAMSlideBar;
 			sourceTree = "<group>";
 		};
 		33BBFF2C426C072C6AD1E013 /* Pods */ = {
@@ -832,6 +845,7 @@
 				2206448D1CC4C8F600D8A402 /* NSObject+SAMExtension.m in Sources */,
 				220644951CC4C8F600D8A402 /* UIImage+SAMExtension.m in Sources */,
 				222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */,
+				22BE26D51CE5B57A00DA5F5C /* SAMSlideBar.m in Sources */,
 				2206449A1CC4C8F600D8A402 /* UITextView+SAMExtension.m in Sources */,
 				220644941CC4C8F600D8A402 /* UIDatePicker+SAMExtension.m in Sources */,
 				22BE26CD1CE336E300DA5F5C /* SAMAlertView.m in Sources */,
