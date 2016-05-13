@@ -50,34 +50,6 @@ static double _duration = 0.25;
 
 + (instancetype)showWithTargetViewController:(id<SAMSlideBarCompontDataSource>)targetViewController
 {
-//    if (!targetViewController) {
-//        return nil;
-//    }
-//   
-//    if (![targetViewController respondsToSelector:@selector(sideBarInSlideBar:)]) {
-//        return nil;
-//    }
-//    
-//    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-//    SAMSlideBar *slideBar = [[SAMSlideBar alloc] initWithFrame:window.bounds];
-//    
-//    slideBar.contentView.x = window.width;
-//    slideBar.alpha = 0;
-//    
-//    slideBar.componentView = [targetViewController sideBarInSlideBar:slideBar];
-//    
-//    [window addSubview:slideBar];
-//    
-//    [UIView animateWithDuration:_duration animations:^{
-//        slideBar.alpha = 1;
-//    } completion:^(BOOL finished) {
-//        if (finished) {
-//            [UIView animateWithDuration:_duration animations:^{
-//                slideBar.contentView.x = _gap;
-//            }];
-//        }
-//    }];
-    
     return [self showWithTargetViewController:targetViewController andType:SAMSlideBarShowDirectionType_left];
 }
 
