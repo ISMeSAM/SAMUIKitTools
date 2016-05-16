@@ -23,15 +23,17 @@ typedef NS_ENUM(NSUInteger, SAMSlideBarShowDirectionType) {
 
 @interface SAMSlideBar : UIView
 
-//@property (nonatomic , copy) void(^viewWillShow)(SAMSlideBar *aSlideBar);
-@property (nonatomic , copy) SAMSlideBarAction viewWillShow ;
-@property (nonatomic , copy) SAMSlideBarAction viewDidShow ;
-@property (nonatomic , copy) SAMSlideBarAction viewWillDismiss ;
-@property (nonatomic , copy) SAMSlideBarAction viewDidDismiss ;
+@property (nonatomic , copy) void(^viewWillShow)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
+//@property (nonatomic , copy) SAMSlideBarAction viewWillShow ;
 
-//@property (nonatomic , copy) void(^viewDidShow)(SAMSlideBar *aSlideBar);
-//@property (nonatomic , copy) void(^viewWillDismiss)(SAMSlideBar *aSlideBar);
-//@property (nonatomic , copy) void(^viewDidDismiss)(SAMSlideBar *aSlideBar);
+@property (nonatomic , copy) void(^viewDidShow)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
+//@property (nonatomic , copy) SAMSlideBarAction viewDidShow ;
+
+@property (nonatomic , copy) void(^viewWillDismiss)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
+//@property (nonatomic , copy) SAMSlideBarAction viewWillDismiss ;
+
+@property (nonatomic , copy) void(^viewDidDismiss)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
+//@property (nonatomic , copy) SAMSlideBarAction viewDidDismiss ;
 
 
 + (instancetype)showWithTargetViewController:(id<SAMSlideBarCompontDataSource>)targetViewController;
@@ -41,5 +43,4 @@ typedef NS_ENUM(NSUInteger, SAMSlideBarShowDirectionType) {
 
 
 @end
-
 

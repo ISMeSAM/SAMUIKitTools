@@ -8,7 +8,6 @@
 @end
 
 
-
 @interface SAMPopAtBottomViewItem : NSObject
 
 @property (nonatomic , copy) NSString *title ;

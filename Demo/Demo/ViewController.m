@@ -98,7 +98,7 @@
         {
 #pragma mark - SAMPopToBottomView
 
-            [[SAMPopToBottomView popWithArray:@[@"发送给朋友",@"保存图片",@"收藏",@"投诉"]] setSelectedItem:^(UIButton *aButton,NSInteger sender) {
+            [[SAMPopToBottomView popWithArray:@[@"发送给朋友"]] setSelectedItem:^(UIButton *aButton,NSInteger sender) {
                 NSLog(@"title==>%@---index==>%ld",aButton.currentTitle,sender);
                 [SAMPopToStatusBarView showStatusBarViewWithMessage:[NSString stringWithFormat:@"%@成功!",aButton.currentTitle]];
             }];
@@ -161,6 +161,21 @@
             
             SAMSlideBar *sli = [SAMSlideBar showWithTargetViewController:self andType:SAMSlideBarShowDirectionType_right];
             
+            
+            
+            [sli setViewWillShow:^(SAMSlideBar *aSlideBar, UIButton *contentView, UIView *componentView) {
+                NSLog(@"setViewWillShow");
+            }];
+            [sli setViewDidShow:^(SAMSlideBar *aSlideBar, UIButton *contentView, UIView *componentView) {
+                NSLog(@"setViewDidShow");
+            }];
+            [sli setViewWillDismiss:^(SAMSlideBar *aSlideBar, UIButton *contentView, UIView *componentView) {
+                NSLog(@"setViewWillDismiss");
+            }];
+            [sli setViewDidDismiss:^(SAMSlideBar *aSlideBar, UIButton *contentView, UIView *componentView) {
+                NSLog(@"setViewDidDismiss");
+            }];
+            
         }
             break;
             
@@ -222,12 +237,4 @@ static NSArray<NSString *> *const items()
 
 
 @end
-
-
-
-
-
-
-
-
 

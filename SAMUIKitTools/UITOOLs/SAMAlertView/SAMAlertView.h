@@ -6,10 +6,10 @@
 
 @interface SAMAlertViewItem : NSObject
 
-@property (nonatomic , copy) NSString *title ;
-@property (nonatomic , strong) UIColor *titleColor ;
+@property (nonatomic , copy , nullable) NSString *title ;
+@property (nonatomic , strong , nullable) UIColor *titleColor ;
 
-- (instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor;
+- (nullable instancetype)initWithTitle:(nullable NSString *)title titleColor:(nullable UIColor *)titleColor;
 
 @end
 

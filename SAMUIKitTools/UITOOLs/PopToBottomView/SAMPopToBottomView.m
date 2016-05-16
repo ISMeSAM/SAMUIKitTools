@@ -69,7 +69,7 @@ static double _duration = 0.25;
 
 + (instancetype)popWithArray:(NSArray<__kindof NSString *> *)items
 {
-    if (2 > items.count) {
+    if (!items.count) {
         return nil;
     }
     
