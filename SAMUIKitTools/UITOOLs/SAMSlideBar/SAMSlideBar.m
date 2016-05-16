@@ -60,7 +60,7 @@ static double _duration = 0.25;
         return nil;
     }
     
-    if (![targetViewController respondsToSelector:@selector(sideBarInSlideBar:)]) {
+    if (![targetViewController respondsToSelector:@selector(sideBarInSlideBarContentView:)]) {
         return nil;
     }
     
@@ -78,9 +78,13 @@ static double _duration = 0.25;
    
     slideBar.alpha = 0;
     
-    slideBar.componentView = [targetViewController sideBarInSlideBar:slideBar];
+    slideBar.componentView = [targetViewController sideBarInSlideBarContentView:slideBar.contentView];
     
     [window addSubview:slideBar];
+    
+    if (slideBar.viewWillShow) {
+        slideBar.viewWillShow(slideBar,slideBar.contentView,slideBar.componentView);
+    }
     
     [UIView animateWithDuration:_duration animations:^{
         slideBar.alpha = 1;
@@ -95,6 +99,10 @@ static double _duration = 0.25;
                 if (SAMSlideBarShowDirectionType_left == type) {
                     slideBar.contentView.x = 0;
                 }
+                //
+                if (slideBar.viewDidShow) {
+                    slideBar.viewDidShow(slideBar,slideBar.contentView,slideBar.componentView);
+                }
             }];
         }
     }];
@@ -107,8 +115,6 @@ static double _duration = 0.25;
 - (void)setComponentView:(UIView *)componentView
 {
     _componentView = componentView;
-    
-    _componentView.frame = self.contentView.bounds;
     
     [self.contentView addSubview:_componentView];
     
@@ -125,6 +131,9 @@ static double _duration = 0.25;
 {
     __weak typeof(self) weakSelf = self;
     __strong typeof(weakSelf) strongSelf = weakSelf;
+    if (self.viewWillDismiss) {
+        self.viewWillDismiss(self,self.contentView,self.componentView);
+    }
     
     [UIView animateWithDuration:_duration animations:^{
         
@@ -142,6 +151,9 @@ static double _duration = 0.25;
                 strongSelf.alpha = 0;
             } completion:^(BOOL finished) {
                 if (finished) {
+                    if (strongSelf.viewDidDismiss) {
+                        strongSelf.viewDidDismiss(strongSelf,strongSelf.contentView,strongSelf.componentView);
+                    }
                     [strongSelf removeFromSuperview];
                 }
             }];

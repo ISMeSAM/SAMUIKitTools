@@ -150,7 +150,6 @@
             
             // left
             [SAMSlideBar showWithTargetViewController:self];
-            
 
         }
             break;
@@ -160,7 +159,7 @@
 #pragma mark - SAMSlideBar right
             // right
             
-            [SAMSlideBar showWithTargetViewController:self andType:SAMSlideBarShowDirectionType_right];
+            SAMSlideBar *sli = [SAMSlideBar showWithTargetViewController:self andType:SAMSlideBarShowDirectionType_right];
             
         }
             break;
@@ -177,10 +176,27 @@
 #pragma mark - SAMSlideBarCompontDataSource
 
 
-- (UIView *)sideBarInSlideBar:(SAMSlideBar *)slideBar
+- (UIView *)sideBarInSlideBarContentView:(UIButton *)contentView
 {
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor whiteColor];
+    UIView *view = [[UIView alloc] initWithFrame:contentView.bounds];
+    
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeContactAdd)];
+    [button addActionForEvents:UIControlEventTouchUpInside aAction:^(UIControl *sender) {
+        NSLog(@"---button--touchupinside");
+    }];
+     button.center = view.center;
+    [view addSubview:button];
+    
+    UIButton *buttonInfo = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    [buttonInfo addActionForEvents:UIControlEventTouchUpInside aAction:^(UIControl *sender) {
+        NSLog(@"---buttonInfo--touchupinside");
+    }];
+    
+    [view addSubview:buttonInfo];
+    buttonInfo.center = CGPointMake(20, 40);
+    
+    button.backgroundColor = [UIColor blueColor];
+    view.backgroundColor = [UIColor linenColor];
     return view;
 }
 
