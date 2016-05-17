@@ -7,33 +7,31 @@
 
 static const void *kaAction = &kaAction;
 
-static const void *kUIControlEventTouchDown = &kUIControlEventTouchDown;
-static const void *kUIControlEventTouchDownRepeat = &kUIControlEventTouchDownRepeat;
-static const void *kUIControlEventTouchDragInside = &kUIControlEventTouchDragInside;
-static const void *kUIControlEventTouchDragOutside = &kUIControlEventTouchDragOutside;
-static const void *kUIControlEventTouchDragEnter = &kUIControlEventTouchDragEnter;
-static const void *kUIControlEventTouchDragExit = &kUIControlEventTouchDragExit;
-static const void *kUIControlEventTouchUpInside = &kUIControlEventTouchUpInside;
-static const void *kUIControlEventTouchUpOutside = &kUIControlEventTouchUpOutside;
-static const void *kUIControlEventTouchCancel = &kUIControlEventTouchCancel;
+static const void *kUIControlEventTouchDown                 = &kUIControlEventTouchDown;
+static const void *kUIControlEventTouchDownRepeat           = &kUIControlEventTouchDownRepeat;
+static const void *kUIControlEventTouchDragInside           = &kUIControlEventTouchDragInside;
+static const void *kUIControlEventTouchDragOutside          = &kUIControlEventTouchDragOutside;
+static const void *kUIControlEventTouchDragEnter            = &kUIControlEventTouchDragEnter;
+static const void *kUIControlEventTouchDragExit             = &kUIControlEventTouchDragExit;
+static const void *kUIControlEventTouchUpInside             = &kUIControlEventTouchUpInside;
+static const void *kUIControlEventTouchUpOutside            = &kUIControlEventTouchUpOutside;
+static const void *kUIControlEventTouchCancel               = &kUIControlEventTouchCancel;
 
-static const void *kUIControlEventValueChanged = &kUIControlEventValueChanged;
-static const void *kUIControlEventPrimaryActionTriggered = &kUIControlEventPrimaryActionTriggered;
+static const void *kUIControlEventValueChanged              = &kUIControlEventValueChanged;
+static const void *kUIControlEventPrimaryActionTriggered    = &kUIControlEventPrimaryActionTriggered;
 
-static const void *kUIControlEventEditingDidBegin = &kUIControlEventEditingDidBegin;
-static const void *kUIControlEventEditingChanged = &kUIControlEventEditingChanged;
-static const void *kUIControlEventEditingDidEnd = &kUIControlEventEditingDidEnd;
-static const void *kUIControlEventEditingDidEndOnExit = &kUIControlEventEditingDidEndOnExit;
+static const void *kUIControlEventEditingDidBegin           = &kUIControlEventEditingDidBegin;
+static const void *kUIControlEventEditingChanged            = &kUIControlEventEditingChanged;
+static const void *kUIControlEventEditingDidEnd             = &kUIControlEventEditingDidEnd;
+static const void *kUIControlEventEditingDidEndOnExit       = &kUIControlEventEditingDidEndOnExit;
 
-static const void *kUIControlEventAllTouchEvents = &kUIControlEventAllTouchEvents;
-static const void *kUIControlEventAllEditingEvents = &kUIControlEventAllEditingEvents;
+static const void *kUIControlEventAllTouchEvents            = &kUIControlEventAllTouchEvents;
+static const void *kUIControlEventAllEditingEvents          = &kUIControlEventAllEditingEvents;
 
-static const void *kUIControlEventApplicationReserved = &kUIControlEventApplicationReserved;
-static const void *kUIControlEventSystemReserved = &kUIControlEventSystemReserved;
+static const void *kUIControlEventApplicationReserved       = &kUIControlEventApplicationReserved;
+static const void *kUIControlEventSystemReserved            = &kUIControlEventSystemReserved;
 
-static const void *kUIControlEventAllEvents = &kUIControlEventAllEvents;
-
-
+static const void *kUIControlEventAllEvents                 = &kUIControlEventAllEvents;
 
 
 @implementation UIControl (SAMAddAction)

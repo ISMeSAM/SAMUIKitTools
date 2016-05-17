@@ -20,6 +20,9 @@
     
     self.title = @"GestureRecognizer";
 
+    CGFloat width  = self.view.width;
+    CGFloat height = self.view.height;
+    
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     imageView.center = self.view.center;
     
@@ -61,13 +64,21 @@
     [self.view setPinchAction:^(UIPinchGestureRecognizer * _Nonnull ge) {
        
         NSLog(@"pinch--->%lf",ge.scale);
+        if (UIGestureRecognizerStateChanged == ge.state) {
+            imageView.width = width * ge.scale;
+            imageView.height = height * ge.scale;
+        }
         
-        imageView.width = imageView.width * ge.scale;
-        imageView.height = imageView.height * ge.scale;
+        if (UIGestureRecognizerStateEnded == ge.state) {
+            ge.scale = 1.f;
+            imageView.width = width;
+            imageView.height = height;
+        }
+        
     }];
     
     
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
 //    [self.view setPanAction:^(UIPanGestureRecognizer * _Nonnull ge) {
 //        NSLog(@"%@",ge);
 //        
@@ -135,4 +146,9 @@
     [self.view endEditing:1];
 }
 
+
+
+
+
 @end
+

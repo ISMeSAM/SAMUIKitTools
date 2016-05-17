@@ -78,7 +78,7 @@ static const void *kSamProgressView = &kSamProgressView;
 
 static double _progressMinHeight = 2.f;
 
-- (void)showProgressViewWithType:(SAMProgressViewProgressType)type
+- (void)sam_showProgressViewWithType:(SAMProgressViewProgressType)type
 {
     if ([self samProgressView]) {
         [[self samProgressView] removeFromSuperview];

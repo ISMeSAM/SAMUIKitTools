@@ -173,7 +173,22 @@
             
         }
             break;
+        case 8:
+        {
+#pragma mark - SAMNetActivity
             
+//            UIView *redView = [[UIView alloc] initWithFrame:self.view.bounds];
+//            redView.backgroundColor = [UIColor redColor];
+//            self.view.sam_activityView = redView;
+            
+            [self.view sam_startActivity];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self.view sam_endActivity];
+            });
+            
+            
+        }
+            break;
         default:
             break;
     }
@@ -224,7 +239,8 @@ static NSArray<NSString *> *const items()
                    @"SAMPopAtBottomView",
                    @"SAMAlertView",
                    @"SAMSlideBar_left",
-                   @"SAMSlideBar_right"
+                   @"SAMSlideBar_right",
+                   @"SAMNetActivity"
                    ];
     }
     return _items;

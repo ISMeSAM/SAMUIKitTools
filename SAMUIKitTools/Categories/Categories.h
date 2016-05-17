@@ -17,6 +17,7 @@
 #import "UIViewController+SAMExtension.h"
 #import "UIView+SAMExtension.h"
 #import "UIView+SAMProgressTool.h"
+#import "UIView+SAMNetActivity.h"
 #import "NSNumber+SAMExtension.h"
 #import "UITableViewCell+SAMExtension.h"
 #import "CALayer+SAMExtension.h"

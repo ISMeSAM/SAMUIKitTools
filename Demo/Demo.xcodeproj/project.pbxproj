@@ -37,6 +37,7 @@
 		220F3A9C1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3A9B1CDAD9E1005BB227 /* UINavigationBar+SAMExtension.m */; };
 		220F3A9E1CDAFB41005BB227 /* SAMUIKitTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */; };
 		220F3AA11CDB2D0B005BB227 /* SAMPopAtBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */; };
+		22272F5B1CEABB3D009ED103 /* UIView+SAMNetActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 22272F5A1CEABB3D009ED103 /* UIView+SAMNetActivity.m */; };
 		222A91031CD9BEC900E152F8 /* UIScrollView+SAMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */; };
 		222A91081CD9CF6700E152F8 /* SAMPopToBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A91071CD9CF6700E152F8 /* SAMPopToBottomView.m */; };
 		223B010C1CE06AA8001A4327 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B010B1CE06AA8001A4327 /* QuartzCore.framework */; };
@@ -139,6 +140,8 @@
 		220F3A9D1CDAFB41005BB227 /* SAMUIKitTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMUIKitTools.bundle; sourceTree = "<group>"; };
 		220F3A9F1CDB2D0B005BB227 /* SAMPopAtBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopAtBottomView.h; sourceTree = "<group>"; };
 		220F3AA01CDB2D0B005BB227 /* SAMPopAtBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMPopAtBottomView.m; sourceTree = "<group>"; };
+		22272F591CEABB3D009ED103 /* UIView+SAMNetActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SAMNetActivity.h"; sourceTree = "<group>"; };
+		22272F5A1CEABB3D009ED103 /* UIView+SAMNetActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SAMNetActivity.m"; sourceTree = "<group>"; };
 		222A91011CD9BEC900E152F8 /* UIScrollView+SAMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SAMExtension.h"; sourceTree = "<group>"; };
 		222A91021CD9BEC900E152F8 /* UIScrollView+SAMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SAMExtension.m"; sourceTree = "<group>"; };
 		222A91061CD9CF6700E152F8 /* SAMPopToBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMPopToBottomView.h; sourceTree = "<group>"; };
@@ -429,6 +432,8 @@
 				225074BB1CC750EA0031832F /* UIView+SAMGestureRecognizerAction.m */,
 				228515741CDC3E8400F34A63 /* UIView+SAMProgressTool.h */,
 				228515751CDC3E8400F34A63 /* UIView+SAMProgressTool.m */,
+				22272F591CEABB3D009ED103 /* UIView+SAMNetActivity.h */,
+				22272F5A1CEABB3D009ED103 /* UIView+SAMNetActivity.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -827,6 +832,7 @@
 				2206449C1CC4C8F600D8A402 /* UIViewController+SAMExtension.m in Sources */,
 				220644A01CC4C8F600D8A402 /* SAMDatePicker.m in Sources */,
 				2206448A1CC4C8F600D8A402 /* NSData+SAMExtension.m in Sources */,
+				22272F5B1CEABB3D009ED103 /* UIView+SAMNetActivity.m in Sources */,
 				225086F21C8E639D00A5245C /* ViewController.m in Sources */,
 				2206449D1CC4C8F600D8A402 /* CheckBox.m in Sources */,
 				220644891CC4C8F600D8A402 /* NSArray+SAMExtension.m in Sources */,
@@ -935,7 +941,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -980,7 +986,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

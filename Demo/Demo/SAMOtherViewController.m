@@ -99,7 +99,7 @@ UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = 1;
-    [self.navigationController.navigationBar showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
+    [self.navigationController.navigationBar sam_showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
     self.navigationController.navigationBar.sam_progress = 0;
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.25 animations:^{
@@ -129,7 +129,7 @@ UIWebViewDelegate
     [super viewDidLoad];
     self.title = @"ProgressView";
     
-    [self.view showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
+    [self.view sam_showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
     
     __weak typeof(self) weakSelf = self;
     
@@ -152,7 +152,7 @@ UIWebViewDelegate
 #pragma mark - ProgressView
     UINavigationBar *navBar = self.navigationController.navigationBar;
     
-    [navBar showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
+    [navBar sam_showProgressViewWithType:(SAMProgressViewProgressType_bottom)];
     navBar.sam_progress = 0;
     
     [UIView animateWithDuration:2.25 animations:^{
@@ -211,9 +211,9 @@ UIWebViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:1];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    __weak typeof(self) weakSelf = self;
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    
+//    __weak typeof(self) weakSelf = self;
     
     
     switch (indexPath.row)

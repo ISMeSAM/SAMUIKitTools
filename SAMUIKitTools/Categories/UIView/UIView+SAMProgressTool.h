@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, SAMProgressViewProgressType)
  *
  *  @param type position type
  */
-- (void)showProgressViewWithType:(SAMProgressViewProgressType)type;
+- (void)sam_showProgressViewWithType:(SAMProgressViewProgressType)type;
 
 /**
  *  dismiss

@@ -17,7 +17,6 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 @implementation UIView (SAMGestureRecognizerAction)
 
 
-
 #pragma mark - setter getter
 
 
@@ -25,7 +24,9 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 {
     objc_setAssociatedObject(self, kTapActionKey, tapAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(handleGestureRecognizer:)];
+    
     [self addGestureRecognizer:tap];
 }
 - (void (^)(UITapGestureRecognizer * _Nonnull))tapAction
@@ -38,8 +39,9 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 {
     objc_setAssociatedObject(self, kLongPressActionKey, longPressAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
-    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
-
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self
+                                                                                            action:@selector(handleGestureRecognizer:)];
+    
     [self addGestureRecognizer:longPress];
 }
 - (void (^)(UILongPressGestureRecognizer * _Nonnull))longPressAction
@@ -52,8 +54,11 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 {
     objc_setAssociatedObject(self, kSwipeActionKey, swipeAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                action:@selector(handleGestureRecognizer:)];
+    
     swipe.direction = UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionLeft;
+    
     [self addGestureRecognizer:swipe];
 }
 - (void (^)(UISwipeGestureRecognizer * _Nonnull))swipeAction
@@ -65,7 +70,10 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 - (void)setPinchAction:(void (^)(UIPinchGestureRecognizer * _Nonnull))pinchAction
 {
     objc_setAssociatedObject(self, kPinchActionKey, pinchAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self
+                                                                                action:@selector(handleGestureRecognizer:)];
+    
+    pinch.scale = 0.5;
     [self addGestureRecognizer:pinch];
 }
 - (void (^)(UIPinchGestureRecognizer * _Nonnull))pinchAction
@@ -77,7 +85,9 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 - (void)setPanAction:(void (^)(UIPanGestureRecognizer * _Nonnull))panAction
 {
     objc_setAssociatedObject(self, kPanActionKey, panAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(handleGestureRecognizer:)];
+    
     [self addGestureRecognizer:pan];
 }
 - (void (^)(UIPanGestureRecognizer * _Nonnull))panAction
@@ -89,7 +99,9 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 - (void)setRotationAction:(void (^)(UIRotationGestureRecognizer * _Nonnull))rotationAction
 {
     objc_setAssociatedObject(self, kRotationActionKey, rotationAction, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    UIRotationGestureRecognizer *rotation = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+    UIRotationGestureRecognizer *rotation = [[UIRotationGestureRecognizer alloc] initWithTarget:self
+                                                                                         action:@selector(handleGestureRecognizer:)];
+    
     [self addGestureRecognizer:rotation];
 }
 - (void (^)(UIRotationGestureRecognizer * _Nonnull))rotationAction
@@ -98,7 +110,9 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 }
 
 
+
 #pragma mark -
+
 
 - (void)handleGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 {
@@ -151,21 +165,10 @@ static const void *kRotationActionKey           = &kRotationActionKey;
 
     }
     
-  
 }
 
 
 
 
-
-
-
 @end
-
-
-
-
-
-
-
 

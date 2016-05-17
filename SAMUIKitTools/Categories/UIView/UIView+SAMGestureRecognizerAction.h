@@ -4,10 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^SAMGestureRecognizer)(UIGestureRecognizer *_Nonnull aGestureRecognizer);
-
 @interface UIView (SAMGestureRecognizerAction)
-
 
 
 @property (nullable , nonatomic , copy) void(^tapAction)(UITapGestureRecognizer *_Nonnull tapGestureRecognizer);
@@ -24,14 +21,5 @@ typedef void(^SAMGestureRecognizer)(UIGestureRecognizer *_Nonnull aGestureRecogn
 @property (nullable , nonatomic , copy) void(^rotationAction)(UIRotationGestureRecognizer *_Nonnull rotationGestureRecognizer);
 
 
-
 @end
-
-
-
-
-
-
-
-
 
