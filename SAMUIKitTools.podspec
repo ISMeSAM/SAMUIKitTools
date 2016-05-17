@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name            = "SAMUIKitTools"
 
-  s.version         = "0.0.3"
+  s.version         = "0.0.5"
   
   s.license         = "MIT"
   
@@ -16,14 +16,12 @@ Pod::Spec.new do |s|
   
   s.source          = { :git => "https://github.com/ISMeSAM/SAMUIKitTools.git", :tag => s.version }
   
-  s.source_files    = "SAMUIKitTools/*.{h,m}"
+  s.source_files    = "SAMUIKitTools","SAMUIKitTools/**/*.h","SAMUIKitTools/**/**/*.{h,m}"
 
   s.resources       = "SAMUIKitTools/SAMUIKitTools.bundle"
   
   s.frameworks      = "QuartzCore","UIKit"
 
-  s.dependency 'pop', '~> 1.0'
-  
   s.requires_arc    = true
 
 end
