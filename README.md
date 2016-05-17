@@ -1,8 +1,10 @@
 # SAMUIKitTools
 
 ##使用方法
-
-
+使用CocoaPods
+```objc
+pod 'SAMUIKitTools', '~> 0.0.5'
+```
 	#import "SAMUIKitTools.h"
 
 
