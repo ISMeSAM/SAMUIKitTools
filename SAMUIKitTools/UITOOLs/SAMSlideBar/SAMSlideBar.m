@@ -80,11 +80,11 @@ static double _duration = 0.25;
     
     slideBar.componentView = [targetViewController sideBarInSlideBarContentView:slideBar.contentView];
     
+    
+    
     [window addSubview:slideBar];
     
-    if (slideBar.viewWillShow) {
-        slideBar.viewWillShow(slideBar,slideBar.contentView,slideBar.componentView);
-    }
+   
     
     [UIView animateWithDuration:_duration animations:^{
         slideBar.alpha = 1;
@@ -112,6 +112,7 @@ static double _duration = 0.25;
 }
 
 
+
 - (void)setComponentView:(UIView *)componentView
 {
     _componentView = componentView;
@@ -131,6 +132,7 @@ static double _duration = 0.25;
 {
     __weak typeof(self) weakSelf = self;
     __strong typeof(weakSelf) strongSelf = weakSelf;
+    
     if (self.viewWillDismiss) {
         self.viewWillDismiss(self,self.contentView,self.componentView);
     }

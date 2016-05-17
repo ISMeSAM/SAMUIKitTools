@@ -5,7 +5,13 @@
 #import <UIKit/UIKit.h>
 
 @class SAMSlideBar;
-
+/**
+ *  说明
+ *
+ *  @param aSlideBar     遮盖层
+ *  @param contentView   背景
+ *  @param componentView 委托者提供的view
+ */
 typedef void(^SAMSlideBarAction)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
 
 typedef NS_ENUM(NSUInteger, SAMSlideBarShowDirectionType) {
@@ -23,8 +29,6 @@ typedef NS_ENUM(NSUInteger, SAMSlideBarShowDirectionType) {
 
 @interface SAMSlideBar : UIView
 
-@property (nonatomic , copy) void(^viewWillShow)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
-//@property (nonatomic , copy) SAMSlideBarAction viewWillShow ;
 
 @property (nonatomic , copy) void(^viewDidShow)(SAMSlideBar *aSlideBar,UIButton *contentView,UIView *componentView);
 //@property (nonatomic , copy) SAMSlideBarAction viewDidShow ;
