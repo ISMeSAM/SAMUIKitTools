@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CheckBox : UIButton
+@interface CheckBoxButton : UIButton
 {
     BOOL _isOpen;
     UIImage *_imgOpen;
