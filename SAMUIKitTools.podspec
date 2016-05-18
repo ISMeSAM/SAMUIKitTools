@@ -16,196 +16,205 @@ Pod::Spec.new do |s|
   
   s.source          = { :git => "https://github.com/ISMeSAM/SAMUIKitTools.git", :tag => s.version }
   
-  s.source_files    = "SAMUIKitTools/SAM{UIKitTools,Keys}.h"
+  s.source_files    = "SAMUIKitTools/*.h","SAMUIKitTools/**/*.h","SAMUIKitTools/**/**/*/{h,m,xib,nib}"
 
   s.resources       = "SAMUIKitTools/SAMUIKitTools.bundle"
   
-  s.frameworks      = "QuartzCore","UIKit"
+  s.frameworks      = "QuartzCore","UIKit","CommonCrypto","objc","Accelerate"
 
   s.requires_arc    = true
 
-  s.public_header_files = 'SAMUIKitTools/SAMUIKitTools.h'
+  s.public_header_files = 'SAMUIKitTools/SAMUIKitTools.h',"SAMUIKitTools/SAMKeys.h"
+
+pch_SAM = <<-EOS
+#ifndef TARGET_OS_IOS
+  #define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+  #define TARGET_OS_WATCH 0
+#endif
+#ifndef TARGET_OS_TV
+  #define TARGET_OS_TV 0
+#endif
+EOS
+  s.prefix_header_contents = pch_SAM
 
   s.subspec 'Categories' do |ss|
-    ss.source_files = 'SAMUIKitTools/Categories/Categories.h'
+    ss.source_files = 'SAMUIKitTools/Categories/*.h','SAMUIKitTools/Categories/**/*.{h,m}'
 
     ss.public_header_files = 'SAMUIKitTools/Categories/Categories.h'
 
-    ss.subspec 'UIView' do |ssUIView|
-      ssUIView.source_files = 'SAMUIKitTools/Categories/UIView/*.{h,m}'
-      ssUIView.frameworks = "QuartzCore"
+    ss.subspec 'UIView' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIView/*.{h,m}'
 
-      ssUIView.public_header_files = 'SAMUIKitTools/Categories/UIView/UIView+{SAMExtension,SAMGestureRecognizerAction,SAMProgressTool,SAMNetActivity}.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIView/UIView+SAM{Extension,GestureRecognizerAction,ProgressTool,NetActivity}.h'
 
     end
 
-    ss.subspec 'UINavigationBar' do |ssUINavigationBar|
-      ssUINavigationBar.source_files = 'SAMUIKitTools/Categories/UINavigationBar/*.{h,m}'
+    ss.subspec 'UINavigationBar' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UINavigationBar/*.{h,m}'
 
-      ssUINavigationBar.public_header_files = 'SAMUIKitTools/Categories/UINavigationBar/UINavigationBar+SAMExtension.h'
-    end
-    
-    ss.subspec 'UIScrollView' do |ssUIScrollView|
-      ssUIScrollView.source_files = 'SAMUIKitTools/Categories/UIScrollView/*.{h,m}'
-
-      ssUIScrollView.public_header_files = 'SAMUIKitTools/Categories/UIScrollView/UIScrollView+SAMExtension.h'
-    end
-
-    ss.subspec 'UIControl' do |ssUIControl|
-      ssUIControl.source_files = 'SAMUIKitTools/Categories/UIControl/*.{h,m}'
-
-      ssUIControl.public_header_files = 'SAMUIKitTools/Categories/UIControl/UIControl+SAMAddAction.h'
-    end
-
-    ss.subspec 'CALayer' do |ssCALayer|
-      ssCALayer.source_files = 'SAMUIKitTools/Categories/CALayer/*.{h,m}'
-      ssCALayer.frameworks = "QuartzCore"
-
-      ssCALayer.public_header_files = 'SAMUIKitTools/Categories/CALayer/CALayer+SAMExtension.h'
-    end
-
-    ss.subspec 'NSArray' do |ssNSArray|
-      ssNSArray.source_files = 'SAMUIKitTools/Categories/NSArray/*.{h,m}'
-
-      ssNSArray.public_header_files = 'SAMUIKitTools/Categories/NSArray/NSArray+SAMExtension.h'
-    end
-
-    ss.subspec 'NSData' do |ssNSData|
-      ssNSData.source_files = 'SAMUIKitTools/Categories/NSData/*.{h,m}'
-      ssNSData.frameworks = "CommonCrypto"
-
-      ssNSData.public_header_files = 'SAMUIKitTools/Categories/NSData/NSData+SAMExtension.h'
-    end
-
-    ss.subspec 'NSDate' do |ssNSDate|
-      ssNSDate.source_files = 'SAMUIKitTools/Categories/NSDate/*.{h,m}'
-
-      ssNSDate.public_header_files = 'SAMUIKitTools/Categories/NSDate/NSDate+SAMExtension.h'
-    end
-
-    ss.subspec 'NSNumber' do |ssNSNumber|
-      ssNSNumber.source_files = 'SAMUIKitTools/Categories/NSNumber/*.{h,m}'
-
-      ssNSNumber.public_header_files = 'SAMUIKitTools/Categories/NSNumber/NSNumber+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UINavigationBar/UINavigationBar+SAMExtension.h'
     end
     
-    ss.subspec 'NSObject' do |ssNSObject|
-      ssNSObject.source_files = 'SAMUIKitTools/Categories/NSObject/*.{h,m}'
-      
-      ssNSObject.public_header_files = 'SAMUIKitTools/Categories/NSObject/NSObject+SAMExtension.h'
-    end
-      
-    ss.subspec 'NSString' do |ssNSString|
-      ssNSString.source_files = 'SAMUIKitTools/Categories/NSString/*.{h,m}'
-      ssNSString.frameworks = "CommonCrypto"
+    ss.subspec 'UIScrollView' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIScrollView/*.{h,m}'
 
-      ssNSString.public_header_files = 'SAMUIKitTools/Categories/NSString/NSString+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIScrollView/UIScrollView+SAMExtension.h'
+    end
+
+    ss.subspec 'UIControl' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIControl/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIControl/UIControl+SAMAddAction.h'
+    end
+
+    ss.subspec 'CALayer' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/CALayer/*.{h,m}'
+
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/CALayer/CALayer+SAMExtension.h'
+    end
+
+    ss.subspec 'NSArray' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSArray/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSArray/NSArray+SAMExtension.h'
+    end
+
+    ss.subspec 'NSData' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSData/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSData/NSData+SAMExtension.h'
+    end
+
+    ss.subspec 'NSDate' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSDate/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSDate/NSDate+SAMExtension.h'
+    end
+
+    ss.subspec 'NSNumber' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSNumber/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSNumber/NSNumber+SAMExtension.h'
     end
     
-    ss.subspec 'UIAlertViewController' do |ssUIAlertViewController|
-      ssUIAlertViewController.source_files = 'SAMUIKitTools/Categories/UIAlertViewController/*.{h,m}'
-
-      ssUIAlertViewController.public_header_files = 'SAMUIKitTools/Categories/UIAlertViewController/UIAlertController+SAMExtension.h'
-    end
-
-    ss.subspec 'UIApplication' do |ssUIApplication|
-      ssUIApplication.source_files = 'SAMUIKitTools/Categories/UIApplication/*.{h,m}'
+    ss.subspec 'NSObject' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSObject/*.{h,m}'
       
-      ssUIApplication.public_header_files = 'SAMUIKitTools/Categories/UIApplication/UIApplication+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSObject/NSObject+SAMExtension.h'
+    end
+      
+    ss.subspec 'NSString' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/NSString/*.{h,m}'
+
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/NSString/NSString+SAMExtension.h'
+    end
+    
+    ss.subspec 'UIAlertViewController' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIAlertViewController/*.{h,m}'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIAlertViewController/UIAlertController+SAMExtension.h'
     end
 
-    ss.subspec 'UIBarButtonItem' do |ssUIBarButtonItem|
-      ssUIBarButtonItem.source_files = 'SAMUIKitTools/Categories/UIBarButtonItem/*.{h,m}'
-      ssUIBarButtonItem.dependency 'SAMUIKitTools/Categories/UIView'
+    ss.subspec 'UIApplication' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIApplication/*.{h,m}'
+      
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIApplication/UIApplication+SAMExtension.h'
+    end
+
+    ss.subspec 'UIBarButtonItem' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIBarButtonItem/*.{h,m}'
+      sss.dependency 'SAMUIKitTools/Categories/UIView'
   
-      ssUIBarButtonItem.public_header_files = 'SAMUIKitTools/Categories/UIBarButtonItem/UIBarButtonItem+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIBarButtonItem/UIBarButtonItem+SAMExtension.h'
     end
 
-    ss.subspec 'UIButton' do |ssUIButton|
-      ssUIButton.source_files = 'SAMUIKitTools/Categories/UIButton/*.{h,m}'
-      ssUIButton.frameworks = 'objc'
+    ss.subspec 'UIButton' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIButton/*.{h,m}'
+
       
-      ssUIButton.public_header_files = 'SAMUIKitTools/Categories/UIButton/UIButton+RemoveHighlightedEffect.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIButton/UIButton+RemoveHighlightedEffect.h'
     end
 
-    ss.subspec 'UIColor' do |ssUIColor|
-      ssUIColor.source_files = 'SAMUIKitTools/Categories/UIColor/*.{h,m}'
-      ssUIColor.frameworks = 'objc'
+    ss.subspec 'UIColor' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIColor/*.{h,m}'
+
       
-      ssUIColor.public_header_files = 'SAMUIKitTools/Categories/UIColor/UIColor+SAMExtension.h'
-
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIColor/UIColor+SAMExtension.h'
     end
 
-    ss.subspec 'UIDatePicker' do |ssUIDatePicker|
-      ssUIDatePicker.source_files = 'SAMUIKitTools/Categories/UIDatePicker/*.{h,m}'
+    ss.subspec 'UIDatePicker' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIDatePicker/*.{h,m}'
 
-      ssUIDatePicker.public_header_files = 'SAMUIKitTools/Categories/UIDatePicker/UIDatePicker+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIDatePicker/UIDatePicker+SAMExtension.h'
     end
 
-    ss.subspec 'UIImage' do |ssUIImage|
-      ssUIImage.source_files = 'SAMUIKitTools/Categories/UIImage/*.{h,m}'
-      ssUIImage.frameworks = 'Accelerate'
+    ss.subspec 'UIImage' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIImage/*.{h,m}'
 
-      ssUIImage.public_header_files = 'SAMUIKitTools/Categories/UIImage/UIImage+SAMExtension.h'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIImage/UIImage+SAMExtension.h'
     end
 
-    ss.subspec 'UILabel' do |ssUILabel|
-      ssUILabel.source_files = 'SAMUIKitTools/Categories/UILabel/*.{h,m}'
+    ss.subspec 'UILabel' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UILabel/*.{h,m}'
 
-      ssUILabel.public_header_files = 'SAMUIKitTools/Categories/UILabel/UILabel+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UILabel/UILabel+SAMExtension.h'
     end
 
-    ss.subspec 'UINavigationController' do |ssUINavigationController|
-      ssUINavigationController.source_files = 'SAMUIKitTools/Categories/UINavigationController/*.{h,m}'
+    ss.subspec 'UINavigationController' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UINavigationController/*.{h,m}'
 
-      ssUINavigationController.public_header_files = 'SAMUIKitTools/Categories/UINavigationController/UINavigationController+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UINavigationController/UINavigationController+SAMExtension.h'
     end
 
-    ss.subspec 'UITabBarItem' do |ssUITabBarItem|
-      ssUITabBarItem.source_files = 'SAMUIKitTools/Categories/UITabBarItem/*.{h,m}'
-      ssUITabBarItem.frameworks = 'objc'
+    ss.subspec 'UITabBarItem' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UITabBarItem/*.{h,m}'
 
-      ssUITabBarItem.public_header_files = 'SAMUIKitTools/Categories/UITabBarItem/UITabBarItem+SAMExtension.h'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/UITabBarItem/UITabBarItem+SAMExtension.h'
     end
 
-    ss.subspec 'UITableViewCell' do |ssUITableViewCell|
-      ssUITableViewCell.source_files = 'SAMUIKitTools/Categories/UITableViewCell/*.{h,m}'
-      ssUITableViewCell.dependency 'SAMUIKitTools/Categories/UIImage'
+    ss.subspec 'UITableViewCell' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UITableViewCell/*.{h,m}'
+      sss.dependency 'SAMUIKitTools/Categories/UIImage'
 
-      ssUITableViewCell.public_header_files = 'SAMUIKitTools/Categories/UITableViewCell/UITableViewCell+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UITableViewCell/UITableViewCell+SAMExtension.h'
     end
 
-    ss.subspec 'UITextView' do |ssUITextView|
-      ssUITextView.source_files = 'SAMUIKitTools/Categories/UITextView/*.{h,m}'
-      ssUITextView.frameworks = 'objc'
+    ss.subspec 'UITextView' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UITextView/*.{h,m}'
 
-      ssUITextView.public_header_files = 'SAMUIKitTools/Categories/UITextView/UITextView+SAMExtension.h'
+
+      sss.public_header_files = 'SAMUIKitTools/Categories/UITextView/UITextView+SAMExtension.h'
     end
 
-    ss.subspec 'UIViewController' do |ssUIViewController|
-      ssUIViewController.source_files = 'SAMUIKitTools/Categories/UIViewController/*.{h,m}'
-      ssUIViewController.dependency 'SAMUIKitTools/Categories/NSObject'
+    ss.subspec 'UIViewController' do |sss|
+      sss.source_files = 'SAMUIKitTools/Categories/UIViewController/*.{h,m}'
+      sss.dependency 'SAMUIKitTools/Categories/NSObject'
 
-      ssUIViewController.public_header_files = 'SAMUIKitTools/Categories/UIViewController/UIViewController+SAMExtension.h'
+      sss.public_header_files = 'SAMUIKitTools/Categories/UIViewController/UIViewController+SAMExtension.h'
     end
 
   end
 
   s.subspec 'UITOOLs' do |ss|
-    ss.source_files = 'SAMUIKitTools/UITOOLs/UITOOLs.h'
+    ss.source_files = 'SAMUIKitTools/UITOOLs/*.h','SAMUIKitTools/UITOOLs/**/*.{h,m}'
     ss.public_header_files = 'SAMUIKitTools/UITOOLs/UITOOLs.h'
 
-    ss.subspec 'SAMSlideBar' do |ssSAMSlideBar|
-      ssSAMSlideBar.source_files = 'SAMUIKitTools/UITOOLs/SAMSlideBar/*.{h,m}'
-      ssSAMSlideBar.dependency 'SAMUIKitTools/Categories/NSObject'
+    ss.subspec 'SAMSlideBar' do |sss|
+      sss.source_files = 'SAMUIKitTools/UITOOLs/SAMSlideBar/*.{h,m}'
+      sss.dependency 'SAMUIKitTools/Categories/NSObject'
 
-      ssSAMSlideBar.public_header_files = 'SAMUIKitTools/UITOOLs/SAMSlideBar/SAMSlideBar.h'
+      sss.public_header_files = 'SAMUIKitTools/UITOOLs/SAMSlideBar/SAMSlideBar.h'
     end
 
     ss.subspec 'SAMAlertView' do |sss|
       sss.source_files = 'SAMUIKitTools/UITOOLs/SAMAlertView/*.{h,m}'
       sss.dependency 'SAMUIKitTools/Categories/UIView'
-      sss.dependency 'SAMUIKitTools/SAMKeys.h'
 
       sss.public_header_files = 'SAMUIKitTools/UITOOLs/SAMAlertView/SAMAlertView.h'
     end
