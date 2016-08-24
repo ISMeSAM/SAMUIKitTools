@@ -4,7 +4,7 @@
 
 #import "CheckBox.h"
 
-@implementation CheckBox
+@implementation CheckBoxButton
 
 + (instancetype)checkBoxWithImage:(UIImage *)openImg closeImg:(UIImage *)closeImg
 {
